@@ -8,12 +8,15 @@
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
 }
+
 @font-face {
     font-family: Livvic;
     src: url(Livvic-Bold.ttf);
 }
 
 * {
+    font-family: "Livvic";
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -135,8 +138,29 @@
     margin: 0 auto;
     padding: 24px 50px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+}
+
+.footer__nav li {
+    display: inline;
+}
+
+.footer__nav li:nth-child(1) {
+    padding-right: 16px;
+}
+
+.footer__nav a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.footer__nav a:hover {
+    color: var(--Light-Coral);
+}
+
+.footer__nav a:active {
+    color: var(--White)
+}
+
+.footer__nav a:visited {
+    color: var(--White);
 }
