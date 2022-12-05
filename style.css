@@ -1,4 +1,4 @@
-:root{
+:root {
     --Midnight_Green: #014E56;
     --Light-Coral: #F67E7E;
     --White: #FFFFFF;
@@ -7,17 +7,23 @@
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
+    --footer-grey: rgba(153, 168, 169, 255);
 }
+
 @font-face {
     font-family: Livvic;
     src: url(Livvic-Bold.ttf);
 }
-*{
- margin:0;
- padding: 0;
- box-sizing: border-box;
+
+* {
+    font-family: "Livvic";
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.button{
+
+.button {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 600;
@@ -25,28 +31,36 @@
     line-height: 28px;
     border-radius: 24px;
 }
-.button::before{
+
+.button::before {
     content: "Hola,";
 }
-.button--primery:link{
-    
-    color:var(--White);
+
+.button--primery:link {
+
+    color: var(--White);
     border: 2px solid var(--White);
-}
-.button--primery:hover{
-    color: var(--Dark-Green);
-    background: var(--White);
-}
-.button--secondary:link{
-    color: var(--Dark-Green);
-    background: var(--White);
-}
-.button--secondary:hoover{
-    color: var(--Dark-Green);
-    background: #79C8C7; 
+
 }
 
-.h1--large{
+.button--primery:hover {
+
+    color: var(--Dark-Green);
+    background: var(--White);
+
+}
+
+.button--secondary:link {
+    color: var(--Dark-Green);
+    background: var(--White);
+}
+
+.button--secondary:hoover {
+    color: var(--Dark-Green);
+    background: #79C8C7;
+}
+
+.h1--large {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 700;
@@ -54,7 +68,8 @@
     line-height: 100px;
     color: var(--Dark-Green);
 }
-.h1--small{
+
+.h1--small {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 700;
@@ -62,7 +77,8 @@
     line-height: 56px;
     color: var(--Dark-Green);
 }
-.h2{
+
+.h2 {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 700;
@@ -70,7 +86,8 @@
     line-height: 48px;
     color: var(--Dark-Green);
 }
-.h3{
+
+.h3 {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 700;
@@ -78,7 +95,8 @@
     line-height: 28px;
     color: var(--Dark-Green);
 }
-.body--1{
+
+.body--1 {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 600;
@@ -86,11 +104,89 @@
     line-height: 28px;
     color: var(--Dark-Green);
 }
-.body--2{
+
+.body--2 {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
     color: var(--Dark-Green);
+}
+
+/* footer */
+
+.footer {
+    color: white;
+    text-align: center;
+
+    width: 100%;
+    background-color: var(--Dark-Green);
+    padding: 66px 60px 64px;
+
+}
+
+.footer__logo {}
+
+.footer__logo img {
+    width: 100px;
+}
+
+.footer__nav {
+
+    list-style: none;
+
+    margin: 0 auto;
+    padding: 24px 50px;
+
+}
+
+.footer__nav li {
+    display: inline;
+}
+
+.footer__nav li:nth-child(1) {
+    padding-right: 24px;
+}
+
+.footer__nav a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.footer__nav a:hover {
+    color: var(--Light-Coral);
+}
+
+.footer__nav a:active {
+    color: var(--White)
+}
+
+.footer__nav a:visited {
+    color: var(--White);
+}
+
+.footer__info {}
+
+.footer__info span {
+    color: var(--footer-grey);
+    font-size: 15px;
+    line-height: 25px;
+
+    display: block;
+}
+
+.footer__socials {
+    padding: 40px 0px 16px;
+}
+
+.footer__socials img:nth-child(1),
+.footer__socials img:nth-child(2) {
+    padding-right: 16px;
+}
+
+.footer__copy {
+    color: var(--footer-grey);
+    white-space: nowrap;
+
 }
