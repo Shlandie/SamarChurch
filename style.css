@@ -7,7 +7,10 @@
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
-
+}
+@font-face {
+    font-family: Livvic;
+    src: url(Livvic-Bold.ttf);
 }
 *{
  margin:0;
