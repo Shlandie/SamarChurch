@@ -36,14 +36,14 @@
     content: "Hola,";
 }
 
-.button--primery:link {
+.button-primary:link {
 
     color: var(--White);
     border: 2px solid var(--White);
 
 }
 
-.button--primery:hover {
+.button-primary:hover {
 
     color: var(--Dark-Green);
     background: var(--White);
@@ -114,6 +114,44 @@
     color: var(--Dark-Green);
 }
 
+/* about */
+.about1 {
+    position: relative;
+    z-index: -1;
+
+    color: var(--White);
+    line-height: 28px;
+    font-size: 15px;
+    text-align: center;
+
+    background-color: var(--Midnight_Green);
+}
+
+.about1 h2 {
+    font-size: 64px;
+    line-height: 56px;
+
+    padding-bottom: 16px;
+    margin: 0px 24px;
+}
+
+.about1 p {
+    padding: 0px 24px 108px;
+}
+
+.about1 img {
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+}
+
+
+.mainabout {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainabout
 /* footer */
 
 .footer {
