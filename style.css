@@ -117,7 +117,6 @@
 /* about */
 .about1 {
     position: relative;
-    z-index: -1;
 
     color: var(--White);
     line-height: 28px;
@@ -143,15 +142,120 @@
     position: absolute;
     right: -100px;
     bottom: -100px;
+
 }
 
 
 .mainabout {
+    text-align: center;
+
+    padding-bottom: 116px;
+    background-color: var(--Deep-Jungle-Green);
+
+    position: relative;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
 }
 
-.mainabout
+.mainabout__ornament1 {
+    position: absolute;
+
+    left: -100px;
+    top: -100px;
+}
+
+.mainabout__ornament2 {
+    position: absolute;
+
+    right: 0px;
+    bottom: 0px;
+
+}
+
+.mainabout h2 {
+    color: white;
+    font-size: 32px;
+    line-height: 32px;
+
+    padding: 88px 24px 48px;
+
+}
+
+.mainabout__person {
+    position: relative;
+
+    width: 88%;
+    padding: 32px 24px 56px;
+    margin-top: 52px;
+    background-color: var(--Sacramento-State-Green);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainabout__person:first-child {
+    margin-top: 0px;
+}
+
+
+
+.mainabout__person h3 {
+    color: var(--Rapture-Blue);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.mainabout__person h4 {
+    color: var(--White);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.mainabout__person img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.mainabout__person__button {
+    position: absolute;
+
+    width: 56px;
+    height: 56px;
+    background-color: var(--Light-Coral);
+    border: none;
+    border-radius: 50%;
+
+}
+
+.mainabout__person__button:before,
+.mainabout__person__button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--Sacramento-State-Green);
+}
+
+.mainabout__person__button:before {
+    width: 4px;
+    margin: 20px auto;
+}
+
+.mainabout__person__button:after {
+    margin: auto 20px;
+    height: 4px;
+}
+
 /* footer */
 
 .footer {
