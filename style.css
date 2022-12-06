@@ -226,6 +226,8 @@
 
 .mainabout__person__button {
     position: absolute;
+    top: 88%;
+    left: 42%;
 
     width: 56px;
     height: 56px;
@@ -235,18 +237,19 @@
 
 }
 
-.mainabout__person__button:before,
+
 .mainabout__person__button:after {
-    content: '';
+    content: '+';
+    font-size: 32px;
+    line-height: 0;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 43%;
+    left: 2%;
     right: 0;
     bottom: 0;
-    background: var(--Sacramento-State-Green);
 }
 
-.mainabout__person__button:before {
+/* .mainabout__person__button:before {
     width: 4px;
     margin: 20px auto;
 }
@@ -254,7 +257,7 @@
 .mainabout__person__button:after {
     margin: auto 20px;
     height: 4px;
-}
+} */
 
 /* footer */
 
@@ -330,5 +333,6 @@
 .footer__copy {
     color: var(--footer-grey);
     white-space: nowrap;
-
+    font-size: 15px;
+    line-height: 25px
 }
