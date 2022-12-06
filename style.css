@@ -255,15 +255,27 @@
     bottom: 0;
 }
 
-/* .mainabout__person__button:before {
-    width: 4px;
-    margin: 20px auto;
+.about2 {
+
+    color: var(--White);
+    text-align: center;
+    position: relative;
+
+    background-color: var(--Sacramento-State-Green);
+
+    overflow: hidden;
 }
 
-.mainabout__person__button:after {
-    margin: auto 20px;
-    height: 4px;
-} */
+.about2 img:not(:first-child) {
+    display: block;
+    margin: 0 auto;
+}
+
+.about2__ornament {
+    position: absolute;
+    left: -100px;
+    top: -100px;
+}
 
 /* footer */
 
