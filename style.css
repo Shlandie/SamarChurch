@@ -203,6 +203,10 @@
     align-items: center;
 }
 
+.mainabout__person h4 {
+    font-style: italic;
+}
+
 .mainabout__person:first-child {
     margin-top: 0px;
 }
@@ -270,42 +274,58 @@
     color: var(--White);
     font-size: 32px;
     line-height: 32px;
-    margin: 88px 24px 64px
+    margin: 88px 24px 0px
 }
 
-.about2 img {
+/* .about2 img {
     display: block;
     margin: 0 auto;
-}
+} */
 
-/* .about__clients {
+.about2__clients {
+    height: 512px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-} */
+}
 
 .about2__1 {
+    display: block;
+
     width: 146.56px;
     height: 24.19px;
-    /* margin-bottom: 57px; */
+    margin: 0px auto;
 }
 
 .about2__2 {
+    display: block;
+
     width: 162.21px;
     height: 19.92px;
+    margin: 0px auto;
 }
 
 .about2__3 {
+    display: block;
+
+    margin: 0px auto;
     width: 159.37px;
     height: 24.19px;
 }
 
 .about2__4 {
+    display: block;
+
+    margin: 0px auto;
     width: 146.56px;
     height: 24.19px;
 }
 
 .about2__5 {
+    display: block;
+
+    margin: 0px auto;
     width: 86.8px;
     height: 39.84px
 }
