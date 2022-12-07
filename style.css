@@ -3,7 +3,7 @@
     --Light-Coral: #F67E7E;
     --White: #FFFFFF;
     --Rapture-Blue: #79C8C7;
-    --Police-Blue: #2C6269;
+    --Police-Blue: hsl(187, 41%, 29%);
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
@@ -117,7 +117,6 @@
 /* about */
 .about1 {
     position: relative;
-    z-index: -1;
 
     color: var(--White);
     line-height: 28px;
@@ -125,6 +124,8 @@
     text-align: center;
 
     background-color: var(--Midnight_Green);
+
+    overflow: hidden;
 }
 
 .about1 h2 {
@@ -143,15 +144,220 @@
     position: absolute;
     right: -100px;
     bottom: -100px;
+
 }
 
 
 .mainabout {
+    text-align: center;
+
+    padding-bottom: 116px;
+    background-color: var(--Deep-Jungle-Green);
+
+    position: relative;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
 }
 
-.mainabout
+.mainabout__ornament1 {
+    position: absolute;
+
+    left: -100px;
+    top: -100px;
+}
+
+.mainabout__ornament2 {
+    position: absolute;
+
+    right: 0px;
+    bottom: 0px;
+
+}
+
+.mainabout h2 {
+    color: white;
+    font-size: 32px;
+    line-height: 32px;
+
+    padding: 88px 24px 48px;
+
+}
+
+.mainabout__person {
+    position: relative;
+
+    width: 88%;
+    padding: 32px 0px 56px;
+    margin: 0px 24px;
+    margin-top: 52px;
+    background-color: var(--Sacramento-State-Green);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainabout__person:first-child {
+    margin-top: 0px;
+}
+
+
+
+.mainabout__person h3 {
+    color: var(--Rapture-Blue);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.mainabout__person h4 {
+    color: var(--White);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.mainabout__person img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.mainabout__person__button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 100%;
+    left: 50%;
+
+
+    width: 56px;
+    height: 56px;
+    background-color: var(--Light-Coral);
+    border: none;
+    border-radius: 50%;
+
+}
+
+
+.mainabout__person__button:after {
+    content: '+';
+    font-size: 32px;
+    line-height: 0;
+    position: absolute;
+
+    top: 43%;
+    left: 2%;
+    right: 0;
+    bottom: 0;
+}
+
+.about2 {
+
+    color: var(--White);
+    text-align: center;
+    position: relative;
+
+    background-color: var(--Sacramento-State-Green);
+
+    overflow: hidden;
+}
+
+.about2 h2 {
+    color: var(--White);
+    font-size: 32px;
+    line-height: 32px;
+    margin: 88px 24px 64px
+}
+
+.about2 img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* .about__clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+
+.about2__1 {
+    width: 146.56px;
+    height: 24.19px;
+    /* margin-bottom: 57px; */
+}
+
+.about2__2 {
+    width: 162.21px;
+    height: 19.92px;
+}
+
+.about2__3 {
+    width: 159.37px;
+    height: 24.19px;
+}
+
+.about2__4 {
+    width: 146.56px;
+    height: 24.19px;
+}
+
+.about2__5 {
+    width: 86.8px;
+    height: 39.84px
+}
+
+
+.about2__ornament {
+    position: absolute;
+    left: -100px;
+    top: -100px;
+}
+
+/* pink section */
+
+.pinksection {
+    position: relative;
+
+    color: var(--Sacramento-State-Green);
+    text-align: center;
+
+    background-color: var(--Light-Coral);
+
+    overflow: hidden;
+}
+
+.pinksection h2 {
+    font-size: 32px;
+    line-height: 32px;
+
+    margin: 83px 0px 24px;
+    padding: 0 24px;
+
+}
+
+.pinksection__button {
+    font-size: 18px;
+    line-height: 28px;
+
+    display: inline-block;
+    margin-bottom: 83px;
+    padding: 12px 30px;
+    background-color: var(--Light-Coral);
+    border: 2px solid var(--Sacramento-State-Green);
+    border-radius: 50px;
+
+}
+
+.pinksection img {
+    position: absolute;
+    left: 0px;
+    bottom: -22px;
+}
+
 /* footer */
 
 .footer {
@@ -216,15 +422,39 @@
 
 .footer__socials {
     padding: 40px 0px 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.footer__socials img:nth-child(1),
-.footer__socials img:nth-child(2) {
+.footer__socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__socials a:first-child img {
+    padding-left: 16px;
+}
+
+.footer__socials a img:nth-child(1),
+.footer__socials a img:nth-child(2) {
     padding-right: 16px;
+}
+
+.footer__socials a:hover {
+    cursor: pointer;
+    filter: invert(51%) sepia(8%) saturate(3511%) hue-rotate(314deg) brightness(125%) contrast(93%);
+}
+
+.footer__socials a:active {
+    filter: invert(0%) sepia(99%) saturate(0%) hue-rotate(40deg) brightness(109%) contrast(101%);
 }
 
 .footer__copy {
     color: var(--footer-grey);
     white-space: nowrap;
-
+    font-size: 15px;
+    line-height: 25px
 }
