@@ -266,10 +266,50 @@
     overflow: hidden;
 }
 
-.about2 img:not(:first-child) {
+.about2 h2 {
+    color: var(--White);
+    font-size: 32px;
+    line-height: 32px;
+    margin: 88px 24px 64px
+}
+
+.about2 img {
     display: block;
     margin: 0 auto;
 }
+
+/* .about__clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+
+.about2__1 {
+    width: 146.56px;
+    height: 24.19px;
+    /* margin-bottom: 57px; */
+}
+
+.about2__2 {
+    width: 162.21px;
+    height: 19.92px;
+}
+
+.about2__3 {
+    width: 159.37px;
+    height: 24.19px;
+}
+
+.about2__4 {
+    width: 146.56px;
+    height: 24.19px;
+}
+
+.about2__5 {
+    width: 86.8px;
+    height: 39.84px
+}
+
 
 .about2__ornament {
     position: absolute;
