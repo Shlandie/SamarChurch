@@ -341,11 +341,34 @@
 
 .footer__socials {
     padding: 40px 0px 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.footer__socials img:nth-child(1),
-.footer__socials img:nth-child(2) {
+.footer__socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__socials a:first-child img {
+    padding-left: 16px;
+}
+
+.footer__socials a img:nth-child(1),
+.footer__socials a img:nth-child(2) {
     padding-right: 16px;
+}
+
+.footer__socials a:hover {
+    cursor: pointer;
+    filter: invert(51%) sepia(8%) saturate(3511%) hue-rotate(314deg) brightness(125%) contrast(93%);
+}
+
+.footer__socials a:active {
+    filter: invert(0%) sepia(99%) saturate(0%) hue-rotate(40deg) brightness(109%) contrast(101%);
 }
 
 .footer__copy {
