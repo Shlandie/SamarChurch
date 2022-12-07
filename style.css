@@ -478,3 +478,55 @@
     font-size: 15px;
     line-height: 25px
 }
+
+/*header*/
+
+header{
+    background-color: var(--Police-Blue);
+}
+.header-logo{
+    width: 100px;
+    padding: 40px 0px 10px 20px;
+}
+.navbar-button{
+    border: none;
+    background-color: var(--Police-Blue);
+}
+.menu-bg-blue{
+    background-color: var(--Police-Blue);
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--Light-Coral);
+}
+.menu-btn{
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    border: 2px solid var(--White);
+    border-radius: 24px;
+    color: var(--White);
+    background-color: var(--Police-Blue);
+    Width: 153px;
+    Height: 48px;
+}
+.nav-img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -100px;
+    bottom: 0px;
+}
+.navbar-menu{
+    padding-left: 48px;
+}
+.navbar-a{
+    padding: 24px 0px 36px 0px;
+}
+.a-white{
+    color: var(--White);
+}
