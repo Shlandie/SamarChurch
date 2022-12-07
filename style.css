@@ -3,7 +3,7 @@
     --Light-Coral: #F67E7E;
     --White: #FFFFFF;
     --Rapture-Blue: #79C8C7;
-    --Police-Blue: #2C6269;
+    --Police-Blue: hsl(187, 41%, 29%);
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
@@ -275,6 +275,47 @@
     position: absolute;
     left: -100px;
     top: -100px;
+}
+
+/* pink section */
+
+.pinksection {
+    position: relative;
+
+    color: var(--Sacramento-State-Green);
+    text-align: center;
+
+    background-color: var(--Light-Coral);
+
+    overflow: hidden;
+}
+
+.pinksection h2 {
+    font-size: 32px;
+    line-height: 32px;
+
+    margin: 83px 0px 24px;
+    padding: 0 24px;
+
+}
+
+.pinksection__button {
+    font-size: 18px;
+    line-height: 28px;
+
+    display: inline-block;
+    margin-bottom: 83px;
+    padding: 12px 30px;
+    background-color: var(--Light-Coral);
+    border: 2px solid var(--Sacramento-State-Green);
+    border-radius: 50px;
+
+}
+
+.pinksection img {
+    position: absolute;
+    left: 0px;
+    bottom: -22px;
 }
 
 /* footer */
