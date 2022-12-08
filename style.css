@@ -166,6 +166,7 @@
 
 .mainabout__ornament1 {
     position: absolute;
+    z-index: -1;
 
     left: -100px;
     top: -100px;
