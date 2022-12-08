@@ -1,4 +1,4 @@
-/* ----------Coloros------------- */
+/* ----------Coloros-------------------------------------------------------------- */
 :root{
     --Midnight_Green: #014E56;
     --Light-Coral: #F67E7E;
@@ -8,72 +8,74 @@
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
-/*-----------Colorends-------------*/
+}
+/*-----------Colorends----------------------------------------------------------*/
 
-}
-/* -----------Fonts--------------*/
+
+/* -----------Fonts------------------------------------------------------------*/
 @font-face {
-    font-family: Livvic-Bold;
-    src: url("Livvic-Bold.ttf");
-}
-@font-face {
-    font-family: Livvic-SemiBold;
-    src: url("Livvic-SemiBold.ttf");
+    font-family: "Livvic-Bold";
+    src: url("Fonts/Livvic-Bold.ttf");
 }
 @font-face {
-    font-family: Livvic;
-    src: url("Livvic-Regular.ttf");
+    font-family:"Livvic-SemiBold";
+    src: url("Fonts/Livvic-SemiBold.ttf");
 }
 @font-face {
-    font-family: Livvic-Black;
-    src: url("Livvic-Black.ttf");
+    font-family: "Livvic";
+    src: url("Fonts/Livvic-Regular.ttf");
 }
 @font-face {
-    font-family: Livvic-BlackItalic;
-    src: url("Livvic-BlackItalic.ttf");
+    font-family: "Livvic-Black";
+    src: url("Fonts/Livvic-Black.ttf");
 }
 @font-face {
-    font-family:Livvic-ExtraLight;
-    src: url("Livvic-ExtraLight.ttf");
+    font-family: "Livvic-BlackItalic";
+    src: url("Fonts/Livvic-BlackItalic.ttf");
 }
 @font-face {
-    font-family: Livvic-ExtraLightItalic;
-    src: url("Livvic-ExtraLightItalic.ttf");
+    font-family: "Livvic-ExtraLight";
+    src: url("Fonts/Livvic-ExtraLight.ttf");
 }
 @font-face {
-    font-family: Livvic-Italic.ttf;
-    src: url("Livvic-Italic.ttf");
+    font-family: "Livvic-ExtraLightItalic";
+    src: url("Fonts/Livvic-ExtraLightItalic.ttf");
 }
 @font-face {
-    font-family: Livvic-Light;
-    src: url("Livvic-Light.ttf");
+    font-family: "Livvic-Italic.ttf";
+    src: url("Fonts/Livvic-Italic.ttf");
 }
 @font-face {
-    font-family: Livvic-LightItalic;
-    src: url("Livvic-LightItalic.ttf");
+    font-family: "Livvic-Light";
+    src: url("FontsLivvic-Light.ttf");
 }
 @font-face {
-    font-family: Livvic-Medium;
-    src: url("Livvic-Medium.ttf");
+    font-family: "Livvic-LightItalic";
+    src: url("Fonts/Livvic-Black.ttf");
 }
 @font-face {
-    font-family: Livvic-MediumItalic;
-    src: url("Livvic-MediumItalic.ttf");
+    font-family: "Livvic-Medium";
+    src: url("Fonts/Livvic-Black.ttf");
 }
 @font-face {
-    font-family: Livvic-SemiBoldItalic;
-    src: url("Livvic-SemiBoldItalic.ttf");
+    font-family: "Livvic-MediumItalic";
+    src: url("Fonts/Livvic-MediumItalic.ttf");
 }
 @font-face {
-    font-family: Livvic-Thin;
-    src: url("Livvic-Thin.ttf");
+    font-family: "Livvic-SemiBoldItalic";
+    src: url("Fonts/Livvic-SemiBoldItalic.ttf");
 }
 @font-face {
-    font-family: Livvic-ThinItalic.ttf;
-    src: url("Livvic-ThinItalic.ttf");
+    font-family: "Livvic-Thin";
+    src: url("Fonts/Livvic-Thin.ttf");
+}
+@font-face {
+    font-family: "Livvic-ThinItalic.ttf";
+    src: url("Fonts/Livvic-ThinItalic.ttf");
 }
 
 /*------------------Fontsend-----------------------------*/
+
 
 * {
     font-family: "Livvic";
