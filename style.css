@@ -483,26 +483,26 @@
 /*header*/
 
 header{
-    background-color: var(--Police-Blue);
+    background-color: var(--Midnight_Green);
 }
 .header-logo{
     width:120px;
-    padding: 30px 0px 10px 20px;
+    padding: 30px 0px 80px 20px;
+}
+.navbar-button-open{
+    margin-top: -60px;
 }
 .navbar-button{
     border: none;
-    background-color: var(--Police-Blue);
+    background-color: var(--Midnight_Green);
 }
 .menu-bg-blue{
-    background-color: var(--Police-Blue);
+    background-color: var(--Midnight_Green);
 }
-a:link{
+.menu-a:link{
     text-decoration: none;
 }
-a:hover{
-    color: var(--Light-Coral);
-}
-button:hover{
+.menu-a:hover{
     color: var(--Light-Coral);
 }
 .menu-btn{
@@ -514,7 +514,7 @@ button:hover{
     border: 2px solid var(--White);
     border-radius: 24px;
     color: var(--White);
-    background-color: var(--Police-Blue);
+    background-color: var(--Midnight_Green);
     Width: 153px;
     Height: 48px;
 }
@@ -537,3 +537,24 @@ button:hover{
 
 /*contacts-main*/
 
+label, input{
+    display: block;
+}
+.contacts-container{
+    width: 100%;
+    background-color: var(--Police-Blue);
+}
+.contacts-h2{
+    width: 327px;
+    height: 40px;
+    color: var(--White);
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.contacts-h3{
+
+}
