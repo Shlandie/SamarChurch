@@ -486,8 +486,8 @@ header{
     background-color: var(--Police-Blue);
 }
 .header-logo{
-    width: 100px;
-    padding: 40px 0px 10px 20px;
+    width:120px;
+    padding: 30px 0px 10px 20px;
 }
 .navbar-button{
     border: none;
@@ -500,6 +500,9 @@ a:link{
     text-decoration: none;
 }
 a:hover{
+    color: var(--Light-Coral);
+}
+button:hover{
     color: var(--Light-Coral);
 }
 .menu-btn{
