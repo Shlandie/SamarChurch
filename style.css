@@ -499,32 +499,32 @@
 /*header*/
 
 header {
-    background-color: var(--Police-Blue);
+    background-color: var(--Midnight_Green);
 }
 
 .header-logo {
     width: 120px;
-    padding: 30px 0px 10px 20px;
+    padding: 30px 0px 80px 20px;
+}
+
+.navbar-button-open {
+    margin-top: -60px;
 }
 
 .navbar-button {
     border: none;
-    background-color: var(--Police-Blue);
+    background-color: var(--Midnight_Green);
 }
 
 .menu-bg-blue {
-    background-color: var(--Police-Blue);
+    background-color: var(--Midnight_Green);
 }
 
-a:link {
+.menu-a:link {
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--Light-Coral);
-}
-
-button:hover {
+.menu-a:hover {
     color: var(--Light-Coral);
 }
 
@@ -537,7 +537,7 @@ button:hover {
     border: 2px solid var(--White);
     border-radius: 24px;
     color: var(--White);
-    background-color: var(--Police-Blue);
+    background-color: var(--Midnight_Green);
     Width: 153px;
     Height: 48px;
 }
@@ -564,4 +564,107 @@ button:hover {
 
 /*contacts-main*/
 
-@media()
+label,
+input {
+    display: block;
+}
+
+.contacts-container {
+    width: 100%;
+    background-color: var(--Police-Blue);
+}
+
+.contacts-h2 {
+    width: 327px;
+    height: 40px;
+    color: var(--White);
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.contacts-h3 {}
+
+
+@media(min-width: 768px) {
+
+    /* about */
+    .about1 h2 {
+        position: relative;
+
+        padding-bottom: 34px;
+    }
+
+    .about1 p {
+        padding: 0px 155px 102px;
+    }
+
+    .about1 img {
+        right: -100px;
+        bottom: 0px;
+    }
+
+    .mainabout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content 1fr 1fr 1fr;
+    }
+
+    .mainabout h2 {
+        padding: 100px 162px 0px;
+        margin: 0 auto;
+        grid-area: 1/ 1/ 2/ 3;
+    }
+
+    .mainabout__ornament1 {
+        left: -100px;
+        top: 0px;
+    }
+
+    .mainabout__person {
+        max-width: 258px;
+        max-height: 253px;
+        margin-top: 48px;
+
+    }
+
+    .mainabout__person:nth-of-type(2n-1) {
+        margin: 108px 5px 0px 96px;
+        justify-self: end;
+    }
+
+    .mainabout__person:nth-of-type(2n) {
+        margin: 108px 96px 0px 5px;
+        justify-self: start;
+    }
+
+    .about2__ornament {
+        left: 0px;
+        top: -100px;
+
+
+    }
+
+    .about2 {
+        height: 308px;
+    }
+
+    .about2__clients {
+
+
+        height: fit-content;
+        padding-bottom: 102px;
+
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .about2__clients img {
+        display: inline-block;
+        margin-top: 52px;
+
+    }
+}
