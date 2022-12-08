@@ -1,19 +1,79 @@
-:root {
+/* ----------Coloros------------- */
+:root{
     --Midnight_Green: #014E56;
     --Light-Coral: #F67E7E;
     --White: #FFFFFF;
     --Rapture-Blue: #79C8C7;
-    --Police-Blue: hsl(187, 41%, 29%);
+    --Police-Blue: #2C6269;
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
-    --footer-grey: rgba(153, 168, 169, 255);
-}
+/*-----------Colorends-------------*/
 
+}
+/* -----------Fonts--------------*/
+@font-face {
+    font-family: Livvic-Bold;
+    src: url("Livvic-Bold.ttf");
+}
+@font-face {
+    font-family: Livvic-SemiBold;
+    src: url("Livvic-SemiBold.ttf");
+}
 @font-face {
     font-family: Livvic;
-    src: url(Livvic-Bold.ttf);
+    src: url("Livvic-Regular.ttf");
 }
+@font-face {
+    font-family: Livvic-Black;
+    src: url("Livvic-Black.ttf");
+}
+@font-face {
+    font-family: Livvic-BlackItalic;
+    src: url("Livvic-BlackItalic.ttf");
+}
+@font-face {
+    font-family:Livvic-ExtraLight;
+    src: url("Livvic-ExtraLight.ttf");
+}
+@font-face {
+    font-family: Livvic-ExtraLightItalic;
+    src: url("Livvic-ExtraLightItalic.ttf");
+}
+@font-face {
+    font-family: Livvic-Italic.ttf;
+    src: url("Livvic-Italic.ttf");
+}
+@font-face {
+    font-family: Livvic-Light;
+    src: url("Livvic-Light.ttf");
+}
+@font-face {
+    font-family: Livvic-LightItalic;
+    src: url("Livvic-LightItalic.ttf");
+}
+@font-face {
+    font-family: Livvic-Medium;
+    src: url("Livvic-Medium.ttf");
+}
+@font-face {
+    font-family: Livvic-MediumItalic;
+    src: url("Livvic-MediumItalic.ttf");
+}
+@font-face {
+    font-family: Livvic-SemiBoldItalic;
+    src: url("Livvic-SemiBoldItalic.ttf");
+}
+@font-face {
+    font-family: Livvic-Thin;
+    src: url("Livvic-Thin.ttf");
+}
+@font-face {
+    font-family: Livvic-ThinItalic.ttf;
+    src: url("Livvic-ThinItalic.ttf");
+}
+
+/*------------------Fontsend-----------------------------*/
 
 * {
     font-family: "Livvic";
@@ -55,64 +115,65 @@
     background: var(--White);
 }
 
-.button--secondary:hoover {
+.button--secondary:hover {
     color: var(--Dark-Green);
     background: #79C8C7;
 }
 
-.h1--large {
-    font-family: 'Livvic';
+/*--------------Header's classes(H1-H3)---------------------*/
+.h1--large{
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
     line-height: 100px;
     color: var(--Dark-Green);
 }
-
-.h1--small {
-    font-family: 'Livvic';
+.h1--small{
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 56px;
     color: var(--Dark-Green);
 }
-
-.h2 {
-    font-family: 'Livvic';
+.h2{
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     color: var(--Dark-Green);
 }
-
-.h3 {
-    font-family: 'Livvic';
+.h3{
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     color: var(--Dark-Green);
 }
+/*------------------------Header's classes(H1-H3)end---------------*/
 
-.body--1 {
-    font-family: 'Livvic';
+/*---------------------Body's text classes----------------*/
+.body--1{
+    font-family: 'Livvic-SemiBold';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     color: var(--Dark-Green);
 }
-
-.body--2 {
-    font-family: 'Livvic';
+.body--2{
+    font-family: 'Livvic-SemiBold';
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
     color: var(--Dark-Green);
 }
+
+/*---------------------Body's text classes end----------------*/
 
 /* about */
 .about1 {
@@ -166,6 +227,7 @@
 
 .mainabout__ornament1 {
     position: absolute;
+    z-index: 0;
 
     left: -100px;
     top: -100px;
@@ -184,7 +246,7 @@
     font-size: 32px;
     line-height: 32px;
 
-    padding: 88px 24px 48px;
+    padding: 88px 24px 0px;
 
 }
 
@@ -217,6 +279,7 @@
     color: var(--Rapture-Blue);
     font-size: 18px;
     line-height: 28px;
+    padding-top: 16px;
 }
 
 .mainabout__person h4 {
@@ -228,6 +291,7 @@
 .mainabout__person img {
     width: 96px;
     height: 96px;
+    border: 2px solid #C4FFFE;
     border-radius: 50%;
 }
 
@@ -244,6 +308,10 @@
     border: none;
     border-radius: 50%;
 
+}
+
+.mainabout__person__button:hover {
+    background-color: var(--Rapture-Blue);
 }
 
 
@@ -372,6 +440,16 @@
 
 }
 
+.pinksection__button:hover {
+    color: var(--White);
+    background-color: var(--Sacramento-State-Green);
+}
+
+.pinksection__button:active {
+    color: var(--Sacramento-State-Green);
+    background-color: var(--Light-Coral);
+}
+
 .pinksection img {
     position: absolute;
     left: 0px;
@@ -481,30 +559,37 @@
 
 /*header*/
 
-header{
+header {
     background-color: var(--Midnight_Green);
 }
-.header-logo{
-    width:120px;
+
+.header-logo {
+    width: 120px;
     padding: 30px 0px 80px 20px;
 }
-.navbar-button-open{
+
+.navbar-button-open {
     margin-top: -60px;
 }
-.navbar-button{
+
+.navbar-button {
     border: none;
     background-color: var(--Midnight_Green);
 }
-.menu-bg-blue{
+
+.menu-bg-blue {
     background-color: var(--Midnight_Green);
 }
-.menu-a:link{
+
+.menu-a:link {
     text-decoration: none;
 }
-.menu-a:hover{
+
+.menu-a:hover {
     color: var(--Light-Coral);
 }
-.menu-btn{
+
+.menu-btn {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 600;
@@ -517,30 +602,34 @@ header{
     Width: 153px;
     Height: 48px;
 }
-.nav-img{
+
+.nav-img {
     width: 200px;
     height: 200px;
     position: absolute;
     right: -100px;
     bottom: 0px;
 }
-.navbar-menu{
+
+.navbar-menu {
     padding-left: 48px;
 }
-.navbar-a{
+
+.navbar-a {
     padding: 24px 0px 36px 0px;
 }
-.a-white{
+
+.a-white {
     color: var(--White);
 }
 
 /*contacts-main*/
 
-label, input{
+label,
+input {
     display: block;
 }
-.contacts-container{
-    margin: 0 auto;
+.contacts-container {
     width: 100%;
     background-color: var(--Midnight_Green);
     display: flex;
@@ -550,7 +639,7 @@ label, input{
 .contacts-item{
     flex-basis: 380px;
 }
-.contacts-h2{
+.contacts-h2 {
     width: 327px;
     margin-left: 50px;
     color: var(--White);
@@ -630,3 +719,82 @@ label:hover{
     color: var(--Light-Coral);
 }
 
+@media(min-width: 768px) {
+
+    /* about */
+    .about1 h2 {
+        position: relative;
+
+        padding-bottom: 34px;
+    }
+
+    .about1 p {
+        padding: 0px 155px 102px;
+    }
+
+    .about1 img {
+        right: -100px;
+        bottom: 0px;
+    }
+
+    .mainabout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content 1fr 1fr 1fr;
+    }
+
+    .mainabout h2 {
+        padding: 100px 162px 0px;
+        margin: 0 auto;
+        grid-area: 1/ 1/ 2/ 3;
+    }
+
+    .mainabout__ornament1 {
+        left: -100px;
+        top: 0px;
+    }
+
+    .mainabout__person {
+        max-width: 258px;
+        max-height: 253px;
+        margin-top: 48px;
+
+    }
+
+    .mainabout__person:nth-of-type(2n-1) {
+        margin: 108px 5px 0px 96px;
+        justify-self: end;
+    }
+
+    .mainabout__person:nth-of-type(2n) {
+        margin: 108px 96px 0px 5px;
+        justify-self: start;
+    }
+
+    .about2__ornament {
+        left: 0px;
+        top: -100px;
+
+
+    }
+
+    .about2 {
+        height: 308px;
+    }
+
+    .about2__clients {
+
+
+        height: fit-content;
+        padding-bottom: 102px;
+
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .about2__clients img {
+        display: inline-block;
+        margin-top: 52px;
+
+    }
+}
