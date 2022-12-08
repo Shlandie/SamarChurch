@@ -1,19 +1,78 @@
-:root {
+/* ----------Coloros------------- */
+:root{
     --Midnight_Green: #014E56;
     --Light-Coral: #F67E7E;
     --White: #FFFFFF;
     --Rapture-Blue: #79C8C7;
-    --Police-Blue: hsl(187, 41%, 29%);
+    --Police-Blue: #2C6269;
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
-    --footer-grey: rgba(153, 168, 169, 255);
-}
+/*-----------Colorends-------------*/
 
+}
+/* -----------Fonts--------------*/
+@font-face {
+    font-family: Livvic-Bold;
+    src: url("Livvic-Bold.ttf");
+}
+@font-face {
+    font-family: Livvic-SemiBold;
+    src: url("Livvic-SemiBold.ttf");
+}
 @font-face {
     font-family: Livvic;
-    src: url(Livvic-Bold.ttf);
+    src: url("Livvic-Regular.ttf");
 }
+@font-face {
+    font-family: Livvic-Black;
+    src: url("Livvic-Black.ttf");
+}
+@font-face {
+    font-family: Livvic-BlackItalic;
+    src: url("Livvic-BlackItalic.ttf");
+}
+@font-face {
+    font-family:Livvic-ExtraLight;
+    src: url("Livvic-ExtraLight.ttf");
+}
+@font-face {
+    font-family: Livvic-ExtraLightItalic;
+    src: url("Livvic-ExtraLightItalic.ttf");
+}
+@font-face {
+    font-family: Livvic-Italic.ttf;
+    src: url("Livvic-Italic.ttf");
+}
+@font-face {
+    font-family: Livvic-Light;
+    src: url("Livvic-Light.ttf");
+}
+@font-face {
+    font-family: Livvic-LightItalic;
+    src: url("Livvic-LightItalic.ttf");
+}
+@font-face {
+    font-family: Livvic-Medium;
+    src: url("Livvic-Medium.ttf");
+}
+@font-face {
+    font-family: Livvic-MediumItalic;
+    src: url("Livvic-MediumItalic.ttf");
+}
+@font-face {
+    font-family: Livvic-SemiBoldItalic;
+    src: url("Livvic-SemiBoldItalic.ttf");
+}
+@font-face {
+    font-family: Livvic-Thin;
+    src: url("Livvic-Thin.ttf");
+}
+@font-face {
+    font-family: Livvic-ThinItalic.ttf;
+    src: url("Livvic-ThinItalic.ttf");
+}
+/*------------------Fontsend-----------------------------*/
 
 * {
     font-family: "Livvic";
@@ -60,59 +119,60 @@
     background: #79C8C7;
 }
 
-.h1--large {
-    font-family: 'Livvic';
+/*--------------Header's classes(H1-H3)---------------------*/
+.h1--large{
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
     line-height: 100px;
     color: var(--Dark-Green);
 }
-
-.h1--small {
-    font-family: 'Livvic';
+.h1--small{
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 56px;
     color: var(--Dark-Green);
 }
-
-.h2 {
-    font-family: 'Livvic';
+.h2{
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     color: var(--Dark-Green);
 }
-
-.h3 {
-    font-family: 'Livvic';
+.h3{
+    font-family: 'Livvic-Bold'';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     color: var(--Dark-Green);
 }
+/*------------------------Header's classes(H1-H3)end---------------*/
 
-.body--1 {
-    font-family: 'Livvic';
+/*---------------------Body's text classes----------------*/
+.body--1{
+    font-family: 'Livvic-SemiBold';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     color: var(--Dark-Green);
 }
-
-.body--2 {
-    font-family: 'Livvic';
+.body--2{
+    font-family: 'Livvic-SemiBold';
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
     color: var(--Dark-Green);
 }
+
+/*---------------------Body's text classes end----------------*/
 
 /* about */
 .about1 {
