@@ -73,7 +73,9 @@
     font-family: "Livvic-ThinItalic.ttf";
     src: url("Fonts/Livvic-ThinItalic.ttf");
 }
-/*--------------Fontsend--------------------------------------------------- */
+
+/*------------------Fontsend-----------------------------*/
+
 
 * {
     font-family: "Livvic";
@@ -146,7 +148,7 @@
     color: var(--Dark-Green);
 }
 .h3{
-    font-family: 'Livvic-Bold'';
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -629,15 +631,19 @@ label,
 input {
     display: block;
 }
-
 .contacts-container {
     width: 100%;
-    background-color: var(--Police-Blue);
+    background-color: var(--Midnight_Green);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
+.contacts-item{
+    flex-basis: 380px;
+}
 .contacts-h2 {
     width: 327px;
-    height: 40px;
+    margin-left: 50px;
     color: var(--White);
     font-family: 'Livvic';
     font-style: normal;
@@ -646,9 +652,74 @@ input {
     line-height: 40px;
     text-align: center;
 }
-
-.contacts-h3 {}
-
+.contacts-h3{
+    width: 200px;
+    color: var(--Light-Coral);
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 115px;
+}
+.contacts-img{
+    display: flex;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.img-person{
+    padding-left: 43px;
+}
+.contacts-p{
+    color: var(--White);
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 23px;
+}
+label{
+    color: var(--Rapture-Blue);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    padding-top: 24px;
+    padding-left: 14px;
+}
+input{
+    border-color: transparent;
+    border-bottom: 1px solid var(--White);
+    background-color: var(--Midnight_Green);
+    width: 325px;
+}
+form{
+    padding-left: 26px;
+}
+.label-name{
+    padding-top: 56px;
+}
+.label-msg{
+    padding-bottom: 58px;
+    margin-bottom: 24px;
+}
+.form-btn{
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    border: 2px solid var(--White) ;
+    border-radius: 24px;
+    color: var(--Midnight_Green);
+    background-color: var(--White);
+    Width: 123px;
+    Height: 48px;
+}
+label:hover{
+    color: var(--Light-Coral);
+}
 
 @media(min-width: 768px) {
 
