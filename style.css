@@ -55,7 +55,7 @@
     background: var(--White);
 }
 
-.button--secondary:hoover {
+.button--secondary:hover {
     color: var(--Dark-Green);
     background: #79C8C7;
 }
@@ -166,7 +166,7 @@
 
 .mainabout__ornament1 {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 
     left: -100px;
     top: -100px;
@@ -185,7 +185,7 @@
     font-size: 32px;
     line-height: 32px;
 
-    padding: 88px 24px 48px;
+    padding: 88px 24px 0px;
 
 }
 
@@ -218,6 +218,7 @@
     color: var(--Rapture-Blue);
     font-size: 18px;
     line-height: 28px;
+    padding-top: 16px;
 }
 
 .mainabout__person h4 {
@@ -229,6 +230,7 @@
 .mainabout__person img {
     width: 96px;
     height: 96px;
+    border: 2px solid #C4FFFE;
     border-radius: 50%;
 }
 
@@ -245,6 +247,10 @@
     border: none;
     border-radius: 50%;
 
+}
+
+.mainabout__person__button:hover {
+    background-color: var(--Rapture-Blue);
 }
 
 
@@ -373,6 +379,16 @@
 
 }
 
+.pinksection__button:hover {
+    color: var(--White);
+    background-color: var(--Sacramento-State-Green);
+}
+
+.pinksection__button:active {
+    color: var(--Sacramento-State-Green);
+    background-color: var(--Light-Coral);
+}
+
 .pinksection img {
     position: absolute;
     left: 0px;
@@ -482,27 +498,33 @@
 
 /*header*/
 
-header{
+header {
     background-color: var(--Police-Blue);
 }
-.header-logo{
+
+.header-logo {
     width: 100px;
     padding: 40px 0px 10px 20px;
 }
-.navbar-button{
+
+.navbar-button {
     border: none;
     background-color: var(--Police-Blue);
 }
-.menu-bg-blue{
+
+.menu-bg-blue {
     background-color: var(--Police-Blue);
 }
-a:link{
+
+a:link {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: var(--Light-Coral);
 }
-.menu-btn{
+
+.menu-btn {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 600;
@@ -515,22 +537,25 @@ a:hover{
     Width: 153px;
     Height: 48px;
 }
-.nav-img{
+
+.nav-img {
     width: 200px;
     height: 200px;
     position: absolute;
     right: -100px;
     bottom: 0px;
 }
-.navbar-menu{
+
+.navbar-menu {
     padding-left: 48px;
 }
-.navbar-a{
+
+.navbar-a {
     padding: 24px 0px 36px 0px;
 }
-.a-white{
+
+.a-white {
     color: var(--White);
 }
 
 /*contacts-main*/
-
