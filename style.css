@@ -606,6 +606,11 @@ header {
     Height: 48px;
 }
 
+.menu-btn:hover{
+    color: var(--Midnight_Green);
+    background-color: var(--White);
+}
+
 .nav-img {
     width: 200px;
     height: 200px;
@@ -625,11 +630,16 @@ header {
 .a-white {
     color: var(--White);
 }
+.navbar-a-font{
+    font-family: 'Livvic';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
 
 /*contacts-main*/
 
-label,
-input {
+label, input {
     display: block;
 }
 .contacts-container {
@@ -644,7 +654,7 @@ input {
 }
 .contacts-h2 {
     width: 327px;
-    margin-left: 50px;
+    margin-left: 30px;
     color: var(--White);
     font-family: 'Livvic';
     font-style: normal;
@@ -661,15 +671,15 @@ input {
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-    margin-left: 115px;
+    margin-left: 100px;
 }
 .contacts-img{
     display: flex;
-    padding-left: 40px;
+    padding-left: 24px;
     padding-top: 40px;
 }
 .img-person{
-    padding-left: 43px;
+    padding-left: 27px;
 }
 .contacts-p{
     color: var(--White);
@@ -679,9 +689,10 @@ input {
     font-size: 18px;
     line-height: 28px;
     padding-left: 23px;
+    padding-right: 24px;
 }
 label{
-    color: var(--Rapture-Blue);
+    color: var(--Police-Blue);
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -717,9 +728,17 @@ form{
     background-color: var(--White);
     Width: 123px;
     Height: 48px;
+    margin-bottom: 88px;
 }
-label:hover{
-    color: var(--Light-Coral);
+.contacts-img-container{
+    background-color: var(--Midnight_Green);
+    width: 100%;
+    height: 88;
+}
+.contacts-icon{
+    position: absolute;
+    right: -100px;
+    bottom: -650px;
 }
 
 @media(min-width: 768px) {
