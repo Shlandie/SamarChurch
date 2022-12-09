@@ -8,11 +8,12 @@
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
+    --Img-Border-Color:#C4FFFE;
 }
 /*-----------Colorends----------------------------------------------------------*/
 
 
-/* -----------Fonts------------------------------------------------------------*/
+/* -----------Fonts----------*/
 @font-face {
     font-family: "Livvic-Bold";
     src: url("Fonts/Livvic-Bold.ttf");
@@ -42,7 +43,7 @@
     src: url("Fonts/Livvic-ExtraLightItalic.ttf");
 }
 @font-face {
-    font-family: "Livvic-Italic.ttf";
+    font-family: "Livvic-Italic";
     src: url("Fonts/Livvic-Italic.ttf");
 }
 @font-face {
@@ -73,6 +74,7 @@
     font-family: "Livvic-ThinItalic.ttf";
     src: url("Fonts/Livvic-ThinItalic.ttf");
 }
+
 
 /*------------------Fontsend-----------------------------*/
 
@@ -129,7 +131,7 @@
     font-weight: 700;
     font-size: 100px;
     line-height: 100px;
-    color: var(--Dark-Green);
+    color: var(--White);
 }
 .h1--small{
     font-family: 'Livvic-Bold';
@@ -137,7 +139,7 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 56px;
-    color: var(--Dark-Green);
+    color: var(--White);
 }
 .h2{
     font-family: 'Livvic-Bold';
@@ -145,17 +147,17 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
-    color: var(--Dark-Green);
+    color: var(--White);
 }
 .h3{
-    font-family: 'Livvic-Bold';
+    font-family: 'Livvic-Bold'';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
-    color: var(--Dark-Green);
+    color: var(--White);
 }
-/*------------------------Header's classes(H1-H3)end---------------*/
+/*--------------Header's classes(H1-H3) end---------------------*/
 
 /*---------------------Body's text classes----------------*/
 .body--1{
@@ -164,7 +166,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    color: var(--Dark-Green);
+    color: var(--White);
 }
 .body--2{
     font-family: 'Livvic-SemiBold';
@@ -172,9 +174,8 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
-    color: var(--Dark-Green);
+    color: var(--White);
 }
-
 /*---------------------Body's text classes end----------------*/
 
 /* about */
