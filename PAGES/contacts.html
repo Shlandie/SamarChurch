@@ -5,35 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
+    <style>
+      .contacts-footer{
+        position: relative;
+      }
+    </style>
 </head>
 <body>
-    <main class="contacts-container">
-        <div>
-            <h2 class="contacts-h2">Contact</h2>
-            <h3 class="contacts-h3">Ask about us</h3>
-            <img src="../IMG/icon-person.svg" alt="icon-person">
-            <p>The quality of our talent network</p>
-            <img src="../IMG/icon-cog.svg" alt="icon-cog">
-            <p>Usage & implementation of our software</p>
-            <img src="../IMG/icon-chart.svg" alt="icon-chart">
-            <p>How we help drive innovation</p>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="header-logo" src="../IMG/logo.svg" alt="logo"></a>
+              <button class="navbar-button navbar-button-open" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span><img src="../IMG/icon-hamburger.svg" alt="icon-hamburger"></span>
+              </button>
+              <div class="menu-bg-blue offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="navbar-button" data-bs-dismiss="offcanvas" aria-label="Close"><img src="../IMG/icon-close.svg" alt="icon-close"></button>
+                </div>
+                <div class="offcanvas-body navbar-menu">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="a-white menu-a navbar-a-font" aria-current="page" href="../index.html">home</a>
+                    </li>
+                    <li class="nav-item navbar-a">
+                      <a class="a-white menu-a navbar-a-font" href="about.html">about us</a>
+                    </li>
+                  </ul>
+                    <a href="contacts.html"><button class="menu-btn menu-a menu-a" type="submit">contact us</button></a>
+                    <img class="nav-img" src="../IMG/bg-pattern-about-1-mobile-nav-1.svg" alt="bg-pattern-about-1-mobile-nav-1">
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contacts-container">
+            <div class="contacts-item">
+                <h2 class="contacts-h2">Contact</h2>
+                <h3 class="contacts-h3">Ask us about</h3>
+                <div class="contacts-img img-person">
+                    <img src="../IMG/icon-person.svg" alt="icon-person">
+                    <p class="contacts-p">The quality of our talent network</p>
+                </div>
+                <div class="contacts-img">
+                    <img src="../IMG/icon-cog.svg" alt="icon-cog">
+                    <p class="contacts-p">Usage & implementation of our software</p>
+                </div>
+                <div class="contacts-img">
+                    <img src="../IMG/icon-chart.svg" alt="icon-chart">
+                    <p class="contacts-p">How we help drive innovation</p>
+                </div>
+            </div>
+            <div class="contacts-item">
+                <form action="">
+                    <label class="label-name" for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                    <label for="comp-name">Company Name</label>
+                    <input type="text" name="comp-name" id="comp-name">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                    <label for="msg">Message</label>
+                    <input class="label-msg" type="text" id="msg" name="msg">
+                    <button class="form-btn" type="submit">submit</button>
+                </form>
+            </div>
         </div>
-        <div>
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email">
-                <label for="comp-name">Company Name</label>
-                <input type="text" name="comp-name" id="comp-name">
-                <label for="title">Title</label>
-                <input type="text" id="title" name="title">
-                <label for="msg">Message</label>
-                <input type="text" id="msg" name="msg">
-                <button type="submit">submit</button>
-            </form>
-        </div>
+          <img class="contacts-icon" src="../IMG/bg-pattern-contact-2.svg" alt="bg-pattern-contact-2">
     </main>
+    <footer class="footer contacts-footer">
+      <a class="footer__logo" href=""><img src="../IMG/logo.svg" alt="main logo"></a>
+
+      <ul class="footer__nav">
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+      </ul>
+
+      <p class="footer__info">
+        <span> 987 Hillcrest Lane</span>
+        <span>Irvine, CA</span>
+        <span>California 92714</span>
+        <span>Call Us : 949-833-7432</span>
+      </p>
+
+      <div class="footer__socials">
+        <a><img src="../IMG/icon-facebook.svg" alt="facebook"></a>
+        <a><img src="../IMG/icon-pinterest.svg" alt="pinterest"></a>
+        <a><img src="../IMG/icon-twitter.svg" alt="twitter"></a>
+      </div>
+
+      <p class="footer__copy">
+        Copyright 2022. All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
