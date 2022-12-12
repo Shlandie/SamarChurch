@@ -765,7 +765,6 @@ input {
 
 ::placeholder{
     color: var(--Rapture-Blue);
-    color: var(--Police-Blue);
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
