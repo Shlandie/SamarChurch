@@ -664,7 +664,7 @@ input {
 
     .about2__clients img {
         display: inline-block;
-        margin-top: 52px;
+        /* margin-top: 52px; */
 
     }
 }
