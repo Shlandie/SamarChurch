@@ -1,5 +1,8 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
 /* ----------Coloros-------------------------------------------------------------- */
-:root{
+:root {
     --Midnight_Green: #014E56;
     --Light-Coral: #F67E7E;
     --White: #FFFFFF;
@@ -8,8 +11,10 @@
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
-    --Img-Border-Color:#C4FFFE;
+    --Img-Border-Color: #C4FFFE;
+    --footer-grey: rgb(255, 255, 255, 0.6);
 }
+
 /*-----------Colorends----------------------------------------------------------*/
 
 
@@ -18,58 +23,72 @@
     font-family: "Livvic-Bold";
     src: url("Fonts/Livvic-Bold.ttf");
 }
+
 @font-face {
-    font-family:"Livvic-SemiBold";
+    font-family: "Livvic-SemiBold";
     src: url("Fonts/Livvic-SemiBold.ttf");
 }
+
 @font-face {
     font-family: "Livvic";
     src: url("Fonts/Livvic-Regular.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Black";
     src: url("Fonts/Livvic-Black.ttf");
 }
+
 @font-face {
     font-family: "Livvic-BlackItalic";
     src: url("Fonts/Livvic-BlackItalic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-ExtraLight";
     src: url("Fonts/Livvic-ExtraLight.ttf");
 }
+
 @font-face {
     font-family: "Livvic-ExtraLightItalic";
     src: url("Fonts/Livvic-ExtraLightItalic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Italic";
     src: url("Fonts/Livvic-Italic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Light";
     src: url("FontsLivvic-Light.ttf");
 }
+
 @font-face {
     font-family: "Livvic-LightItalic";
     src: url("Fonts/Livvic-Black.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Medium";
     src: url("Fonts/Livvic-Black.ttf");
 }
+
 @font-face {
     font-family: "Livvic-MediumItalic";
     src: url("Fonts/Livvic-MediumItalic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-SemiBoldItalic";
     src: url("Fonts/Livvic-SemiBoldItalic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Thin";
     src: url("Fonts/Livvic-Thin.ttf");
 }
+
 @font-face {
     font-family: "Livvic-ThinItalic.ttf";
     src: url("Fonts/Livvic-ThinItalic.ttf");
@@ -94,16 +113,19 @@
     font-size: 18px;
     line-height: 28px;
     border-radius: 24px;
+    text-decoration: none;
+    padding: 11px 32px;
+    border: 2px solid var(--White);
 }
 
-.button::before {
+/* .button::before { 
     content: "Hola,";
-}
+} */
 
 .button-primary:link {
 
     color: var(--White);
-    border: 2px solid var(--White);
+    
 
 }
 
@@ -111,6 +133,14 @@
 
     color: var(--Dark-Green);
     background: var(--White);
+
+}
+.button-primary:active {
+
+    color: var(--Sacramento-State-Green);
+    opacity: 0.0;
+    bac
+    border: var(--Sacramento-State-Green);
 
 }
 
@@ -124,8 +154,13 @@
     background: #79C8C7;
 }
 
+.button--secondary:active {
+    color: var(--Dark-Green);
+    background: #79C8C7;
+}
+
 /*--------------Header's classes(H1-H3)---------------------*/
-.h1--large{
+.h1--large {
     font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
@@ -133,7 +168,8 @@
     line-height: 100px;
     color: var(--White);
 }
-.h1--small{
+
+.h1--small {
     font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
@@ -141,7 +177,8 @@
     line-height: 56px;
     color: var(--White);
 }
-.h2{
+
+.h2 {
     font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
@@ -149,18 +186,20 @@
     line-height: 48px;
     color: var(--White);
 }
-.h3{
-    font-family: 'Livvic-Bold'';
+
+.h3 {
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     color: var(--White);
 }
+
 /*--------------Header's classes(H1-H3) end---------------------*/
 
 /*---------------------Body's text classes----------------*/
-.body--1{
+.body--1 {
     font-family: 'Livvic-SemiBold';
     font-style: normal;
     font-weight: 600;
@@ -168,7 +207,8 @@
     line-height: 28px;
     color: var(--White);
 }
-.body--2{
+
+.body--2 {
     font-family: 'Livvic-SemiBold';
     font-style: normal;
     font-weight: 600;
@@ -176,6 +216,7 @@
     line-height: 25px;
     color: var(--White);
 }
+
 /*---------------------Body's text classes end----------------*/
 
 /* about */
@@ -193,14 +234,17 @@
 }
 
 .about1 h2 {
-    font-size: 64px;
-    line-height: 56px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
 
     padding-bottom: 16px;
     margin: 0px 24px;
 }
 
 .about1 p {
+    font-weight: 600;
+
     padding: 0px 24px 108px;
 }
 
@@ -247,6 +291,7 @@
 .mainabout h2 {
     color: white;
     font-size: 32px;
+    font-weight: 700;
     line-height: 32px;
 
     padding: 88px 24px 0px;
@@ -281,6 +326,7 @@
 .mainabout__person h3 {
     color: var(--Rapture-Blue);
     font-size: 18px;
+    font-weight: 700;
     line-height: 28px;
     padding-top: 16px;
 }
@@ -289,6 +335,7 @@
     color: var(--White);
     font-size: 15px;
     line-height: 25px;
+    font-weight: 500;
 }
 
 .mainabout__person img {
@@ -299,6 +346,8 @@
 }
 
 .mainabout__person__button {
+    font-weight: 700;
+
     position: absolute;
     transform: translate(-50%, -50%);
     top: 100%;
@@ -345,6 +394,7 @@
     color: var(--White);
     font-size: 32px;
     line-height: 32px;
+    font-weight: 700;
     margin: 88px 24px 0px
 }
 
@@ -411,6 +461,9 @@
 /* pink section */
 
 .pinksection {
+    font-weight: 700;
+    line-height: 32px;
+
     position: relative;
 
     color: var(--Sacramento-State-Green);
@@ -422,8 +475,10 @@
 }
 
 .pinksection h2 {
+    font-family: "Livvic-Bold";
     font-size: 32px;
     line-height: 32px;
+    font-weight: 700;
 
     margin: 83px 0px 24px;
     padding: 0 24px;
@@ -431,8 +486,12 @@
 }
 
 .pinksection__button {
+
     font-size: 18px;
     line-height: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--Sacramento-State-Green);
 
     display: inline-block;
     margin-bottom: 83px;
@@ -496,6 +555,9 @@
 
 .footer__nav a {
     color: var(--White);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -517,6 +579,7 @@
     color: var(--footer-grey);
     font-size: 15px;
     line-height: 25px;
+    font-weight: 600;
 
     display: block;
 }
@@ -557,7 +620,8 @@
     color: var(--footer-grey);
     white-space: nowrap;
     font-size: 15px;
-    line-height: 25px
+    line-height: 25px;
+    font-weight: 600;
 }
 
 /*header*/
@@ -605,7 +669,7 @@ header {
     padding: 9px 33px 11px 34px;
 }
 
-.menu-btn:hover{
+.menu-btn:hover {
     color: var(--Midnight_Green);
     background-color: var(--White);
 }
@@ -629,7 +693,8 @@ header {
 .a-white {
     color: var(--White);
 }
-.navbar-a-font{
+
+.navbar-a-font {
     font-family: 'Livvic';
     font-weight: 600;
     font-size: 18px;
@@ -641,6 +706,7 @@ header {
 input {
     display: block;
 }
+
 .contacts-container {
     width: 100%;
     background-color: var(--Midnight_Green);
@@ -648,9 +714,11 @@ input {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.contacts-item{
+
+.contacts-item {
     flex-basis: 380px;
 }
+
 .contacts-h2 {
     width: 327px;
     margin-left: 30px;
@@ -662,7 +730,8 @@ input {
     line-height: 40px;
     text-align: center;
 }
-.contacts-h3{
+
+.contacts-h3 {
     width: 200px;
     color: var(--Light-Coral);
     font-family: 'Livvic';
@@ -672,15 +741,18 @@ input {
     line-height: 48px;
     margin-left: 100px;
 }
-.contacts-img{
+
+.contacts-img {
     display: flex;
     padding-left: 24px;
     padding-top: 40px;
 }
-.img-person{
+
+.img-person {
     padding-left: 27px;
 }
-.contacts-p{
+
+.contacts-p {
     color: var(--White);
     font-family: 'Livvic';
     font-style: normal;
@@ -693,6 +765,7 @@ input {
 
 ::placeholder{
     color: var(--Rapture-Blue);
+    color: var(--Police-Blue);
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -700,7 +773,7 @@ input {
     padding-left: 14px;
 }
 
-input{
+input {
     border-color: transparent;
     border-bottom: 1px solid var(--White);
     background-color: var(--Midnight_Green);
@@ -718,23 +791,26 @@ input:focus{
     line-height: 25px;
     color: var(--White);
 }
-form{
+
+form {
     padding-left: 26px;
 }
 .input-name{
     padding-top: 56px;
 }
-.input-msg{
+
+.input-msg {
     padding-bottom: 58px;
     margin-bottom: 24px;
 }
-.form-btn{
+
+.form-btn {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    border: 2px solid var(--White) ;
+    border: 2px solid var(--White);
     border-radius: 24px;
     color: var(--Midnight_Green);
     background-color: var(--White);
@@ -743,7 +819,7 @@ form{
     margin-bottom: 88px;
 }
 
-.contacts-icon{
+.contacts-icon {
     position: absolute;
     right: -100px;
     bottom: -590px;
@@ -753,13 +829,12 @@ form{
 
     /* about */
     .about1 h2 {
-        position: relative;
-
-        padding-bottom: 34px;
+        padding-bottom: 32px;
     }
 
     .about1 p {
         padding: 0px 155px 102px;
+        margin-bottom: 0px;
     }
 
     .about1 img {
@@ -812,19 +887,27 @@ form{
         height: 308px;
     }
 
+    .about2 h2 {
+        margin-top: 100px;
+    }
+
     .about2__clients {
 
 
-        height: fit-content;
-        padding-bottom: 102px;
+        height: 0px;
+        margin-top: 52px;
 
         flex-direction: row;
-        align-items: baseline;
+        align-items: center;
+    }
+
+    .about2__clients img {
+        display: flex;
     }
 
     .about2__clients img {
         display: inline-block;
-        margin-top: 52px;
+        /* margin-top: 52px; */
 
     }
 }
