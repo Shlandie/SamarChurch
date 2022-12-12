@@ -602,8 +602,7 @@ header {
     border-radius: 24px;
     color: var(--White);
     background-color: var(--Midnight_Green);
-    Width: 153px;
-    Height: 48px;
+    padding: 9px 33px 11px 34px;
 }
 
 .menu-btn:hover{
@@ -639,7 +638,7 @@ header {
 
 /*contacts-main*/
 
-label, input {
+input {
     display: block;
 }
 .contacts-container {
@@ -691,28 +690,41 @@ label, input {
     padding-left: 23px;
     padding-right: 24px;
 }
-label{
-    color: var(--Police-Blue);
+
+::placeholder{
+    color: var(--Rapture-Blue);
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
-    padding-top: 24px;
     padding-left: 14px;
 }
+
 input{
     border-color: transparent;
     border-bottom: 1px solid var(--White);
     background-color: var(--Midnight_Green);
     width: 325px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+input:focus{
+    background-color: var(--Midnight_Green);
+    outline: none;
+    border-bottom: 1px solid var(--Rapture-Blue);
+    font-family: 'livvic';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--White);
 }
 form{
     padding-left: 26px;
 }
-.label-name{
+.input-name{
     padding-top: 56px;
 }
-.label-msg{
+.input-msg{
     padding-bottom: 58px;
     margin-bottom: 24px;
 }
@@ -730,15 +742,11 @@ form{
     Height: 48px;
     margin-bottom: 88px;
 }
-.contacts-img-container{
-    background-color: var(--Midnight_Green);
-    width: 100%;
-    height: 88;
-}
+
 .contacts-icon{
     position: absolute;
     right: -100px;
-    bottom: -650px;
+    bottom: -590px;
 }
 
 @media(min-width: 768px) {
