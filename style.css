@@ -913,4 +913,28 @@ form {
         /* margin-top: 52px; */
 
     }
+
+    /*header-tablet*/
+
+    .nav-img{
+        object-fit: cover;
+        object-position: 200px 200px;
+        right: 0px;
+    }
+    .header-hamburger{
+        object-fit: cover;
+        object-position: 50px 50px;
+    }
+    .navbar-a {
+        padding: 0px 200px 0px 40px;
+    }
+    .menu-btn{
+        margin-right: 40px;
+        margin-bottom: 20px;
+        margin-top: -20px;
+    }
+    .nav-item-expand{
+        margin-top: -10px;
+    }
+    
 }
