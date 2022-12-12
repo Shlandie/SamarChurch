@@ -1,5 +1,5 @@
 /* ----------Coloros-------------------------------------------------------------- */
-:root{
+:root {
     --Midnight_Green: #014E56;
     --Light-Coral: #F67E7E;
     --White: #FFFFFF;
@@ -8,8 +8,9 @@
     --Deep-Jungle-Green: #004047;
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
-    --Img-Border-Color:#C4FFFE;
+    --Img-Border-Color: #C4FFFE;
 }
+
 /*-----------Colorends----------------------------------------------------------*/
 
 
@@ -18,58 +19,72 @@
     font-family: "Livvic-Bold";
     src: url("Fonts/Livvic-Bold.ttf");
 }
+
 @font-face {
-    font-family:"Livvic-SemiBold";
+    font-family: "Livvic-SemiBold";
     src: url("Fonts/Livvic-SemiBold.ttf");
 }
+
 @font-face {
     font-family: "Livvic";
     src: url("Fonts/Livvic-Regular.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Black";
     src: url("Fonts/Livvic-Black.ttf");
 }
+
 @font-face {
     font-family: "Livvic-BlackItalic";
     src: url("Fonts/Livvic-BlackItalic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-ExtraLight";
     src: url("Fonts/Livvic-ExtraLight.ttf");
 }
+
 @font-face {
     font-family: "Livvic-ExtraLightItalic";
     src: url("Fonts/Livvic-ExtraLightItalic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Italic";
     src: url("Fonts/Livvic-Italic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Light";
     src: url("FontsLivvic-Light.ttf");
 }
+
 @font-face {
     font-family: "Livvic-LightItalic";
     src: url("Fonts/Livvic-Black.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Medium";
     src: url("Fonts/Livvic-Black.ttf");
 }
+
 @font-face {
     font-family: "Livvic-MediumItalic";
     src: url("Fonts/Livvic-MediumItalic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-SemiBoldItalic";
     src: url("Fonts/Livvic-SemiBoldItalic.ttf");
 }
+
 @font-face {
     font-family: "Livvic-Thin";
     src: url("Fonts/Livvic-Thin.ttf");
 }
+
 @font-face {
     font-family: "Livvic-ThinItalic.ttf";
     src: url("Fonts/Livvic-ThinItalic.ttf");
@@ -125,7 +140,7 @@
 }
 
 /*--------------Header's classes(H1-H3)---------------------*/
-.h1--large{
+.h1--large {
     font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
@@ -133,7 +148,8 @@
     line-height: 100px;
     color: var(--White);
 }
-.h1--small{
+
+.h1--small {
     font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
@@ -141,7 +157,8 @@
     line-height: 56px;
     color: var(--White);
 }
-.h2{
+
+.h2 {
     font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
@@ -149,18 +166,20 @@
     line-height: 48px;
     color: var(--White);
 }
-.h3{
-    font-family: 'Livvic-Bold'';
+
+.h3 {
+    font-family: 'Livvic-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     color: var(--White);
 }
+
 /*--------------Header's classes(H1-H3) end---------------------*/
 
 /*---------------------Body's text classes----------------*/
-.body--1{
+.body--1 {
     font-family: 'Livvic-SemiBold';
     font-style: normal;
     font-weight: 600;
@@ -168,7 +187,8 @@
     line-height: 28px;
     color: var(--White);
 }
-.body--2{
+
+.body--2 {
     font-family: 'Livvic-SemiBold';
     font-style: normal;
     font-weight: 600;
@@ -176,6 +196,7 @@
     line-height: 25px;
     color: var(--White);
 }
+
 /*---------------------Body's text classes end----------------*/
 
 /* about */
@@ -194,13 +215,16 @@
 
 .about1 h2 {
     font-size: 64px;
-    line-height: 56px;
+    line-height: 100px;
+    font-weight: 700;
 
     padding-bottom: 16px;
     margin: 0px 24px;
 }
 
 .about1 p {
+    font-weight: 600;
+
     padding: 0px 24px 108px;
 }
 
@@ -606,7 +630,7 @@ header {
     Height: 48px;
 }
 
-.menu-btn:hover{
+.menu-btn:hover {
     color: var(--Midnight_Green);
     background-color: var(--White);
 }
@@ -630,7 +654,8 @@ header {
 .a-white {
     color: var(--White);
 }
-.navbar-a-font{
+
+.navbar-a-font {
     font-family: 'Livvic';
     font-weight: 600;
     font-size: 18px;
@@ -639,9 +664,11 @@ header {
 
 /*contacts-main*/
 
-label, input {
+label,
+input {
     display: block;
 }
+
 .contacts-container {
     width: 100%;
     background-color: var(--Midnight_Green);
@@ -649,9 +676,11 @@ label, input {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.contacts-item{
+
+.contacts-item {
     flex-basis: 380px;
 }
+
 .contacts-h2 {
     width: 327px;
     margin-left: 30px;
@@ -663,7 +692,8 @@ label, input {
     line-height: 40px;
     text-align: center;
 }
-.contacts-h3{
+
+.contacts-h3 {
     width: 200px;
     color: var(--Light-Coral);
     font-family: 'Livvic';
@@ -673,15 +703,18 @@ label, input {
     line-height: 48px;
     margin-left: 100px;
 }
-.contacts-img{
+
+.contacts-img {
     display: flex;
     padding-left: 24px;
     padding-top: 40px;
 }
-.img-person{
+
+.img-person {
     padding-left: 27px;
 }
-.contacts-p{
+
+.contacts-p {
     color: var(--White);
     font-family: 'Livvic';
     font-style: normal;
@@ -691,7 +724,8 @@ label, input {
     padding-left: 23px;
     padding-right: 24px;
 }
-label{
+
+label {
     color: var(--Police-Blue);
     font-style: normal;
     font-weight: 600;
@@ -700,29 +734,34 @@ label{
     padding-top: 24px;
     padding-left: 14px;
 }
-input{
+
+input {
     border-color: transparent;
     border-bottom: 1px solid var(--White);
     background-color: var(--Midnight_Green);
     width: 325px;
 }
-form{
+
+form {
     padding-left: 26px;
 }
-.label-name{
+
+.label-name {
     padding-top: 56px;
 }
-.label-msg{
+
+.label-msg {
     padding-bottom: 58px;
     margin-bottom: 24px;
 }
-.form-btn{
+
+.form-btn {
     font-family: 'Livvic';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    border: 2px solid var(--White) ;
+    border: 2px solid var(--White);
     border-radius: 24px;
     color: var(--Midnight_Green);
     background-color: var(--White);
@@ -730,12 +769,14 @@ form{
     Height: 48px;
     margin-bottom: 88px;
 }
-.contacts-img-container{
+
+.contacts-img-container {
     background-color: var(--Midnight_Green);
     width: 100%;
     height: 88;
 }
-.contacts-icon{
+
+.contacts-icon {
     position: absolute;
     right: -100px;
     bottom: -650px;
