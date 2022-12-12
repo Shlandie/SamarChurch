@@ -1,3 +1,6 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
 /* ----------Coloros-------------------------------------------------------------- */
 :root {
     --Midnight_Green: #014E56;
@@ -9,6 +12,7 @@
     --Sacramento-State-Green: #012F34;
     --Dark-Green: #002529;
     --Img-Border-Color: #C4FFFE;
+    --footer-grey: rgb(255, 255, 255, 0.6);
 }
 
 /*-----------Colorends----------------------------------------------------------*/
@@ -214,8 +218,8 @@
 }
 
 .about1 h2 {
-    font-size: 64px;
-    line-height: 100px;
+    font-size: 40px;
+    line-height: 40px;
     font-weight: 700;
 
     padding-bottom: 16px;
@@ -271,6 +275,7 @@
 .mainabout h2 {
     color: white;
     font-size: 32px;
+    font-weight: 700;
     line-height: 32px;
 
     padding: 88px 24px 0px;
@@ -305,6 +310,7 @@
 .mainabout__person h3 {
     color: var(--Rapture-Blue);
     font-size: 18px;
+    font-weight: 700;
     line-height: 28px;
     padding-top: 16px;
 }
@@ -313,6 +319,7 @@
     color: var(--White);
     font-size: 15px;
     line-height: 25px;
+    font-weight: 500;
 }
 
 .mainabout__person img {
@@ -323,6 +330,8 @@
 }
 
 .mainabout__person__button {
+    font-weight: 700;
+
     position: absolute;
     transform: translate(-50%, -50%);
     top: 100%;
@@ -369,6 +378,7 @@
     color: var(--White);
     font-size: 32px;
     line-height: 32px;
+    font-weight: 700;
     margin: 88px 24px 0px
 }
 
@@ -435,6 +445,9 @@
 /* pink section */
 
 .pinksection {
+    font-weight: 700;
+    line-height: 32px;
+
     position: relative;
 
     color: var(--Sacramento-State-Green);
@@ -446,8 +459,10 @@
 }
 
 .pinksection h2 {
+    font-family: "Livvic-Bold";
     font-size: 32px;
     line-height: 32px;
+    font-weight: 700;
 
     margin: 83px 0px 24px;
     padding: 0 24px;
@@ -455,8 +470,12 @@
 }
 
 .pinksection__button {
+
     font-size: 18px;
     line-height: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--Sacramento-State-Green);
 
     display: inline-block;
     margin-bottom: 83px;
@@ -520,6 +539,9 @@
 
 .footer__nav a {
     color: var(--White);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -541,6 +563,7 @@
     color: var(--footer-grey);
     font-size: 15px;
     line-height: 25px;
+    font-weight: 600;
 
     display: block;
 }
@@ -581,7 +604,8 @@
     color: var(--footer-grey);
     white-space: nowrap;
     font-size: 15px;
-    line-height: 25px
+    line-height: 25px;
+    font-weight: 600;
 }
 
 /*header*/
@@ -786,13 +810,12 @@ form {
 
     /* about */
     .about1 h2 {
-        position: relative;
-
-        padding-bottom: 34px;
+        padding-bottom: 32px;
     }
 
     .about1 p {
         padding: 0px 155px 102px;
+        margin-bottom: 0px;
     }
 
     .about1 img {
@@ -845,14 +868,22 @@ form {
         height: 308px;
     }
 
+    .about2 h2 {
+        margin-top: 100px;
+    }
+
     .about2__clients {
 
 
-        height: fit-content;
-        padding-bottom: 102px;
+        height: 0px;
+        margin-top: 52px;
 
         flex-direction: row;
-        align-items: baseline;
+        align-items: center;
+    }
+
+    .about2__clients img {
+        display: flex;
     }
 
     .about2__clients img {
