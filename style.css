@@ -819,9 +819,13 @@ form {
 }
 
 .contacts-icon {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 90px 90px;
     position: absolute;
-    right: -100px;
-    bottom: -590px;
+    right: 0px;
+    top: 970px;
 }
 
 @media(min-width: 768px) {
