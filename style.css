@@ -638,10 +638,14 @@ header {
 .navbar-button-open {
     margin-top: -60px;
 }
+.navbar-btn-close{
+    padding-top: 56px;
+}
 
 .navbar-button {
     border: none;
     background-color: var(--Midnight_Green);
+    padding-right: 24px;
 }
 
 .menu-bg-blue {
@@ -939,5 +943,7 @@ form {
     .nav-item-expand{
         margin-top: -10px;
     }
-    
+    .navbar-button{
+        padding-right: 0px;
+    }
 }
