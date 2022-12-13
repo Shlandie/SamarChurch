@@ -632,7 +632,7 @@ header {
 
 .header-logo {
     width: 120px;
-    padding: 30px 0px 80px 20px;
+    padding: 30px 24px 80px 24px;
 }
 
 .navbar-button-open {
@@ -769,7 +769,6 @@ input {
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
-    padding-left: 14px;
 }
 
 input {
@@ -779,6 +778,7 @@ input {
     width: 325px;
     padding-top: 24px;
     padding-bottom: 16px;
+    padding-left: 24px;
 }
 input:focus{
     background-color: var(--Midnight_Green);
@@ -825,7 +825,7 @@ form {
     object-position: 90px 90px;
     position: absolute;
     right: 0px;
-    top: 970px;
+    top: 963px;
 }
 
 @media(min-width: 768px) {
