@@ -916,6 +916,9 @@ form {
 
     /*header-tablet*/
 
+    .header-logo{
+        width: 130px;
+    }
     .nav-img{
         object-fit: cover;
         object-position: 200px 200px;
