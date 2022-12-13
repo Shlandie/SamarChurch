@@ -632,7 +632,7 @@ header {
 
 .header-logo {
     width: 120px;
-    padding: 30px 24px 80px 24px;
+    padding: 30px 24px 80px 12px;
 }
 
 .navbar-button-open {
@@ -645,7 +645,7 @@ header {
 .navbar-button {
     border: none;
     background-color: var(--Midnight_Green);
-    padding-right: 24px;
+    padding-right: 12px;
 }
 
 .menu-bg-blue {
