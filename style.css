@@ -829,7 +829,7 @@ form {
     object-position: 90px 90px;
     position: absolute;
     right: 0px;
-    top: 963px;
+    top: 966px;
 }
 
 @media(min-width: 768px) {
@@ -945,5 +945,19 @@ form {
     }
     .navbar-button{
         padding-right: 0px;
+    }
+}
+
+@media(min-width: 1440px) {
+    /*header-desktop*/
+    .header-logo{
+        margin-left: 153px;
+        width: 150px;
+    }
+    .menu-btn{
+        margin-right: 165px;
+    }
+    .navbar-a{
+        padding-right: 565px;
     }
 }
