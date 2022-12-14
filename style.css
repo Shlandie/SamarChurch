@@ -206,6 +206,7 @@
     font-size: 18px;
     line-height: 28px;
     color: var(--White);
+    margin-bottom:0px;
 }
 
 .body--2 {
