@@ -930,6 +930,7 @@ form {
 
     .header-logo{
         width: 130px;
+        padding: 56px 24px 80px 23px;
     }
     .nav-img{
         object-fit: cover;
@@ -944,12 +945,12 @@ form {
         padding: 0px 200px 0px 40px;
     }
     .menu-btn{
-        margin-right: 40px;
+        margin-right: 24px;
         margin-bottom: 20px;
-        margin-top: -20px;
+        margin-top: 0px;
     }
     .nav-item-expand{
-        margin-top: -10px;
+        margin-top: 10px;
     }
     .navbar-button{
         padding-right: 0px;
@@ -971,31 +972,26 @@ form {
         width: 160px;
         height: 190px;
         object-position: 90px 5px;
-        top: 987px;
+        top: 1010px;
     }
     .contacts-icon-green{
-        top: 150px;
+        top: 170px;
         object-position: -100px 0px;
     }
 }
 
 @media(min-width: 1440px) {
     /*header-desktop*/
-    .header-logo{
-        padding: 56px 24px 80px 12px;
-        margin-left: 164px;
+    .header-logo {
         width: 150px;
+        margin-left: 142px;
     }
+    .navbar-a{
+        padding-right: 566px;
+    }
+
     .menu-btn{
         margin-right: 153px;
     }
-    .navbar-a{
-        padding-right: 555px;
-    }
-    .nav-item-expand{
-        margin-top: 10px;
-    }
-    .menu-btn{
-        margin-top: 0px;
-    }
+
 }
