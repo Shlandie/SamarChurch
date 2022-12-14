@@ -720,7 +720,7 @@ input {
 }
 
 .contacts-item {
-    flex-basis: 380px;
+    flex-basis: 700px;
 }
 
 .contacts-h2 {
@@ -946,6 +946,8 @@ form {
     .navbar-button{
         padding-right: 0px;
     }
+    /*contacts-main-tablet*/
+
 }
 
 @media(min-width: 1440px) {
