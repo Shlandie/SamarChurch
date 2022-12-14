@@ -716,7 +716,7 @@ input {
     background-color: var(--Midnight_Green);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contacts-item {
@@ -725,7 +725,8 @@ input {
 
 .contacts-h2 {
     width: 327px;
-    margin-left: 30px;
+    margin: 0 auto;
+    padding-bottom: 24px;
     color: var(--White);
     font-family: 'Livvic';
     font-style: normal;
@@ -743,7 +744,7 @@ input {
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-    margin-left: 100px;
+    margin: 0 auto;
 }
 
 .contacts-img {
@@ -829,7 +830,14 @@ form {
     object-position: 90px 90px;
     position: absolute;
     right: 0px;
-    top: 966px;
+    top: 973px;
+}
+.contacts-icon-green{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    object-fit: cover;
+    object-position: 100px 200px;
 }
 
 @media(min-width: 768px) {
@@ -947,19 +955,47 @@ form {
         padding-right: 0px;
     }
     /*contacts-main-tablet*/
-
+    .contacts-img{
+        padding-left: 127px;
+    }
+    form{
+        padding-left: 115px;
+    }
+    input{
+        width: 540px;
+    }
+    .img-person{
+        padding-left: 130px;
+    }
+    .contacts-icon{
+        width: 160px;
+        height: 190px;
+        object-position: 90px 5px;
+        top: 987px;
+    }
+    .contacts-icon-green{
+        top: 150px;
+        object-position: -100px 0px;
+    }
 }
 
 @media(min-width: 1440px) {
     /*header-desktop*/
     .header-logo{
-        margin-left: 153px;
+        padding: 56px 24px 80px 12px;
+        margin-left: 164px;
         width: 150px;
     }
     .menu-btn{
         margin-right: 153px;
     }
     .navbar-a{
-        padding-right: 565px;
+        padding-right: 555px;
+    }
+    .nav-item-expand{
+        margin-top: 10px;
+    }
+    .menu-btn{
+        margin-top: 0px;
     }
 }
