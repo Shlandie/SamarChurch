@@ -709,6 +709,10 @@ header {
 
 /*contacts-main*/
 
+.contacts-main{
+    position: relative;
+  }
+
 input {
     display: block;
 }
@@ -836,7 +840,7 @@ form {
     object-position: 90px 90px;
     position: absolute;
     right: 0px;
-    top: 973px;
+    bottom: 0px;
 }
 
 .contacts-icon-green {
@@ -845,6 +849,47 @@ form {
     position: absolute;
     object-fit: cover;
     object-position: 100px 200px;
+}
+
+/*form-javascript*/
+
+.error-field{
+    border-bottom: 1px solid var(--Light-Coral) !important;
+}
+.error-field::placeholder{
+    color: var(--Light-Coral);
+}
+.error-label{
+    color: var(--Light-Coral) !important;
+    font-family: 'Livvic';
+    font-weight: 700;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 12px;
+    padding-top: 8px;
+    padding-left: 25px;
+}
+.error-label-comp-name{
+    color: var(--Light-Coral) !important;
+    font-family: 'Livvic';
+    font-weight: 700;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 12px;
+    padding-left: 25px;
+    margin-bottom: 352px;
+    margin-top: -352px;
+}
+.error-label-msg{
+    color: var(--Light-Coral) !important;
+    font-family: 'Livvic';
+    font-weight: 700;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 12px;
+    padding-left: 25px;
+    margin-top: -16px;
+    margin-bottom: 8px;
 }
 
 @media(min-width: 768px) {
@@ -1067,11 +1112,11 @@ form {
         width: 160px;
         height: 197px;
         object-position: 90px 5px;
-        top: 1002px;
+        bottom: 0px;
     }
 
     .contacts-icon-green {
-        top: 170px;
+        top: -20px;
         object-position: -100px 0px;
     }
 
@@ -1099,12 +1144,12 @@ form {
 
     /*contacts-main-desktop*/
     .contacts-h2 {
-        margin-left: 90px;
+        margin-left: 65px;
         margin-top: 60px;
     }
 
     .contacts-h3 {
-        margin-left: 175px;
+        margin-left: 150px;
         margin-bottom: 25px;
         margin-top: 10px;
     }
@@ -1121,17 +1166,17 @@ form {
         width: 160px;
         height: 180px;
         object-position: 80px;
-        top: 577px;
+        bottom: 0px;
     }
 
     .contacts-img {
         padding-top: 24px;
-        margin-left: 40px;
-        margin-right: -40px;
+        margin-left: 15px;
+        margin-right: -15px;
     }
 
     .contacts-icon-green {
-        top: 210px;
+        top: 20px;
     }
 
     .mainabout {
