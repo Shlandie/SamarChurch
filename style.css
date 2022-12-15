@@ -1000,5 +1000,24 @@ form {
     .menu-btn{
         margin-right: 153px;
     }
+    /*contacts-main-desktop*/
+    .contacts-h2{
+        margin-left: 50px;
+    }
+    .contacts-h3{
+        margin-left: 135px;
+    }
+    form{
+        padding-right: 153px;
+    }
+    .contacts-item{
+        flex-basis: 610px;
+    }
+    .contacts-icon{
+        width: 160px;
+        height: 180px;
+        object-position: 80px;
+        top: 577px;
+    }
 
 }
