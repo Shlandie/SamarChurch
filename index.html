@@ -1,45 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css">
+    <style>
 
+        .flex{
+            display: flex;
+        }
+      
+        .ar-dist--l{
+            position: absolute; left: 165px;
+        }
+        .ar-dist--r{
+            position: absolute;  right: 165px;
+        }
+        
+        .img--rounded{
+            display: block;
+            border: 2px solid var(--Img-Border-Color);
+            margin-top: 32px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 62px; ;
+            height: 62px;
+            border-radius: 31px;
+        }
+        
+        .hr{
+            width: 50px;
+            height: 4px;
+        }
+        .hr--home1{
+            background-color: var(--Rapture-Blue);
+            margin-bottom: 0px;
+            width: 0px;
+            height: 0px;
+           
+        }
+        .hr--home2{
+            background-color: var(--Light-Coral);
+            margin-top: 144px;
+            margin-bottom: 54px;
+
+        }
+        
+        
+        .text--coral{
+            color: var(--Light-Coral);
+        }
+        .text--blue{
+            color: var(--Rapture-Blue);
+        }
+        .text--italic{
+            font-family: 'Livvic-Italic';
+            font-size: 13px;
+            line-height: 18px;
+            color:var(--White)
+        }
+        
+        .relflex{
+            position: relative;
+            display: flex;
+        }
+
+        #section--home1{
+            height: 450px;
+            background-color: var(--Midnight_Green);
+            background-image: 
+                url(IMG/bg-pattern-home-2.svg);
+            background-size: auto 100px;
+            background-repeat:  no-repeat;
+            background-position:  center bottom;
+            flex-direction:column;
+        
+        }
+        #section--home2{
+            height: 1073px;
+            background-color: var(--Sacramento-State-Green);
+            background-image: 
+                url(IMG/bg-pattern-home-3.svg);
+            background-size: 200px auto;
+            background-repeat: no-repeat, no-repeat;
+            background-position: right -100px top;
+            flex-direction: column; 
+        }
+        #section--home3{
+            height: 1410px;
+            background-color: var(--Deep-Jungle-Green);
+            background-image: 
+                url(IMG/bg-pattern-home-4-about-3.svg),
+                url(IMG/bg-pattern-home-5.svg);
+            background-size: auto 100px,200px auto;
+            background-repeat: no-repeat, no-repeat;
+            background-position: left top, right bottom;
+            flex-direction: column;
+        }
+        
+
+
+    @media(min-width:1440px){
+        #section--home1{
+            height: 450px;
+            background-color: var(--Midnight_Green);
+            background-image: 
+                url(IMG/bg-pattern-home-1.svg),
+                url(IMG/bg-pattern-home-2.svg);
+            background-size: 200px 200px,auto 100px;
+            background-repeat: no-repeat, no-repeat;
+            background-position: left -100px top, right 165px bottom;
+            flex-direction: row;
+        }
+        #section--home2{
+            height: 684px;
+            background-color: var(--Sacramento-State-Green);
+            background-image: 
+                url(IMG/bg-pattern-home-3.svg);
+            background-size: 200px auto;
+            background-repeat: no-repeat, no-repeat;
+            background-position: right -100px bottom;
+            flex-direction: row;
+        }
+        #section--home3{
+            height: 745px;
+            background-color: var(--Deep-Jungle-Green);
+            background-image: 
+                url(IMG/bg-pattern-home-4-about-3.svg),
+                url(IMG/bg-pattern-home-5.svg);
+            background-size: auto 100px,200px auto;
+            background-repeat: no-repeat, no-repeat;
+            background-position: left top, right bottom;
+            flex-direction: column;
+        }
+
+
+
+        .hr{
+            width: 50px;
+            height: 4px;
+	    opacity: 1;
+        }
+        .hr--home1{
+            background-color: var(--Rapture-Blue);
+            margin-bottom: 79px;
+/*             display: block; */
+        }
+        .hr--home2{
+            background-color: var(--Light-Coral);
+            margin-top: 144px;
+            margin-bottom: 54px;
+
+        }
+    }
+
+        #ar-home3--1{
+            margin-top: 140px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 932px;
+            text-align: center;
+            align-self:center;
+            background-color: hsla(0, 0, 0,0);
+        }
+        #ar-home3--2{
+            justify-content: center;
+            display: flex;
+        }
+        .div--home2{
+            margin-bottom: 32px;
+            width: 540px;
+        }
+        .div-quote{
+            background-image: url(IMG/icon-quotes.svg);
+            background-repeat: no-repeat;
+            margin-top: 56px;
+            background-position: top center;
+            display: flex;
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: center;
+            display: block;
+            width: 350px;
+        }
+        .div-quote>p:first-of-type{
+            margin-top: 36px;
+            margin-bottom: 24px;
+        }
+        .div--person::before{
+            content: url(IMG/icon-person.svg);
+            float: left;
+            margin-right: 23px;
+        }
+        .div--chart::before{
+            content: url(IMG/icon-chart.svg);
+            float: left;
+            margin-right: 23px;
+        }
+        .div--cog::before{
+            content: url(IMG/icon-cog.svg);
+            float: left;
+            margin-right: 23px;
+        }
+    </style>
+</head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img class="header-logo"src="IMG/logo.svg" alt="logo"></a>
+              <a class="navbar-brand" href="index.html"><img class="header-logo" src="IMG/logo.svg" alt="logo"></a>
               <button class="navbar-button navbar-button-open" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span><img src="IMG/icon-hamburger.svg" alt="icon-hamburger"></span>
+                <span><img class="header-hamburger" src="IMG/icon-hamburger.svg" alt="icon-hamburger"></span>
               </button>
               <div class="menu-bg-blue offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                  <button type="button" class="navbar-button" data-bs-dismiss="offcanvas" aria-label="Close"><img src="IMG/icon-close.svg" alt="icon-close"></button>
+                  <button type="button" class="navbar-button navbar-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img src="IMG/icon-close.svg" alt="icon-close"></button>
                 </div>
                 <div class="offcanvas-body navbar-menu">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-expand">
                       <a class="a-white menu-a navbar-a-font" aria-current="page" href="index.html">home</a>
                     </li>
-                    <li class="nav-item navbar-a">
-                      <a class="a-white menu-a navbar-a-font" href="PAGES/about.html">about us</a>
+                    <li class="nav-item navbar-a nav-item-expand">
+                      <a class="a-white menu-a navbar-a-font" href="PAGES/about.html">about</a>
                     </li>
                   </ul>
-                    <a href="PAGES/contacts.html"><button class="menu-btn menu-a" type="submit">contact us</button></a>
+                    <a href="PAGES/contacts.html" class="menu-btn menu-a">contact us</a>
                     <img class="nav-img" src="IMG/bg-pattern-about-1-mobile-nav-1.svg" alt="bg-pattern-about-1-mobile-nav-1">
                 </div>
               </div>
             </div>
         </nav>
     </header>
+    <main>
+
+
+
+        <!-- FIND the best talent -->
+        <section id="section--home1" class="relflex">
+            <article class="ar-dist--l" style="width: 635px;">
+                <h1 class="h1--large" >
+                    Find the <br>best <span class="text--coral">talent</span>
+                </h1>
+            </article>
+            <article class="ar-dist--r" style="width: 445px;">
+                <hr class="hr--home1 hr">
+                <p class="body--1">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+            </article>
+        </section>
+
+
+
+        <!--Build & manage distributed teams like no one else.-->
+        <section id="section--home2" class="relflex">
+            <article class="ar-dist--l" style="width: 445px;">
+                <hr class="hr hr--home2">
+                <h2 class="h2">
+                    Build & manage distributed teams like no one else.
+                </h2>
+            </article>
+            <article class="ar-dist--r">
+               
+                <div class="div--person div--home2 " style=" margin-top: 198px;">
+                    <p class="body--1 text--coral" >Experienced Individuals</p>
+                    <p class="body--2">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+                </div>
+              
+             
+                <div class="div--cog div--home2 ">
+                    <p class="body--1 text--coral">Easy to Implement</p>
+                    <p class="body--2">Our processes have been refined over years of implementation meaning our teams always deliver.</p>
+                </div>
+              
+              
+                <div class="div--chart div--home2 ">
+                    <p class="body--1 text--coral">Enhanced Productivity</p>
+                    <p class="body--2">Our customized platform with in-built analytics helps you manage your distributed teams.</p>
+                </div>
+              
+            </article>
+        </section>
+
+
+
+
+
+        <!--Delivering real results for top companies. Some of our success stories.  -->
+        <section id="section--home3" class="relflex">
+            <article id="ar-home3--1">
+                <h2 class="h2" >Delivering real results for top companies. Some of our <span class="text--blue">success stories.</span></h2>
+            </article>
+            <article id="ar-home3--2">
+                <div class="div-quote">
+                    <p class="body--2"> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
+                    <p class="body--1 text--blue">Kady Baker</p>
+                    <p class="text--italic">Product Manager at Bookmark</p>
+                    <img src="IMG/avatar-kady.jpg" alt="Kady" class="img--rounded">
+                </div>
+                <div class="div-quote">
+                    <p class="body--2">“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</p>
+                    <p class="body--1 text--blue">Aiysha Reese </p>
+                    <p class="text--italic">Founder of Manage</p>
+                    <img src="IMG/avatar-aiysha.jpg" alt="Aiysha" class="img--rounded">
+                </div>
+
+                <div class="div-quote">
+                    <p class="body--2">“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”</p>
+                    <p class="body--1 text--blue">Arthur Clarke</p>
+                    <p class="text--italic">Co-founder of MyPhysio</p>
+                    <img src="IMG/avatar-arthur.jpg" alt="Arthur" class="img--rounded">
+                    
+                </div>
+            </article>
+        </section>
+	<section class="pinksection">
+            <h2 class="h2" style="color:var(--Sacramento-State-Green);">Ready to get started?</h2>
+            <a href="" class="button-primary button">contact us</a>
+            <img src="IMG/bg-pattern-home-6-about-5.svg" alt="ornament">
+        </section>
+    </main>
     <footer class="footer">
       <a class="footer__logo" href=""><img src="IMG/logo.svg" alt="main logo"></a>
 
@@ -65,10 +349,9 @@
         Copyright 2022. All Rights Reserved
       </p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"></script>
-</body>
 
+</body>
 </html>
