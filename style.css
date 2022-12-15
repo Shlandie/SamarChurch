@@ -945,14 +945,14 @@ form {
     .pinksection h2 {
         display: inline-block;
         margin: 0;
-        padding: 84px 0px 84px 95px;
+        padding: 84px 0px 84px 85px;
         padding-right: 84px;
     }
 
     .pinksection a {
         display: inline-block;
         margin: unset;
-        margin-right: 96px;
+        margin-right: 85px;
     }
 
     /* footer */
