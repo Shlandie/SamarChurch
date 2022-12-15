@@ -15,28 +15,34 @@
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img class="header-logo" src="../IMG/logo.svg" alt="logo"></a>
-              <button class="navbar-button navbar-button-open" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span><img class="header-hamburger" src="../IMG/icon-hamburger.svg" alt="icon-hamburger"></span>
-              </button>
-              <div class="menu-bg-blue offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                  <button type="button" class="navbar-button navbar-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img src="../IMG/icon-close.svg" alt="icon-close"></button>
+                <a class="navbar-brand" href="../index.html"><img class="header-logo" src="../IMG/logo.svg"
+                        alt="logo"></a>
+                <button class="navbar-button navbar-button-open" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span><img class="header-hamburger" src="../IMG/icon-hamburger.svg" alt="icon-hamburger"></span>
+                </button>
+                <div class="menu-bg-blue offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="navbar-button navbar-btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"><img src="../IMG/icon-close.svg" alt="icon-close"></button>
+                    </div>
+                    <div class="offcanvas-body navbar-menu">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item nav-item-expand">
+                                <a class="a-white menu-a navbar-a-font" aria-current="page"
+                                    href="../index.html">home</a>
+                            </li>
+                            <li class="nav-item navbar-a nav-item-expand">
+                                <a class="a-white menu-a navbar-a-font" href="about.html">about</a>
+                            </li>
+                        </ul>
+                        <a href="contacts.html" class="menu-btn menu-a">contact us</a>
+                        <img class="nav-img" src="../IMG/bg-pattern-about-1-mobile-nav-1.svg"
+                            alt="bg-pattern-about-1-mobile-nav-1">
+                    </div>
                 </div>
-                <div class="offcanvas-body navbar-menu">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item nav-item-expand">
-                      <a class="a-white menu-a navbar-a-font" aria-current="page" href="../index.html">home</a>
-                    </li>
-                    <li class="nav-item navbar-a nav-item-expand">
-                      <a class="a-white menu-a navbar-a-font" href="about.html">about</a>
-                    </li>
-                  </ul>
-                    <a href="contacts.html" class="menu-btn menu-a">contact us</a>
-                    <img class="nav-img" src="../IMG/bg-pattern-about-1-mobile-nav-1.svg" alt="bg-pattern-about-1-mobile-nav-1">
-                </div>
-              </div>
             </div>
         </nav>
     </header>
@@ -136,29 +142,36 @@
         <img src="../IMG/bg-pattern-home-6-about-5.svg" alt="ornament">
     </section>
     <footer class="footer">
-        <a class="footer__logo" href=""><img src="../IMG/logo.svg" alt="main logo"></a>
+        <div class="footer__wrap">
+            <div class="footer__innerwrap">
+                <a class="footer__logo" href=""><img src="../IMG/logo.svg" alt="main logo"></a>
 
-        <ul class="footer__nav">
-            <li><a href="">home</a></li>
-            <li><a href="">about</a></li>
-        </ul>
 
-        <p class="footer__info">
-            <span> 987 Hillcrest Lane</span>
-            <span>Irvine, CA</span>
-            <span>California 92714</span>
-            <span>Call Us : 949-833-7432</span>
-        </p>
+                <ul class="footer__nav">
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                </ul>
+            </div>
 
-        <div class="footer__socials">
-            <a><img src="../IMG/icon-facebook.svg" alt="facebook"></a>
-            <a><img src="../IMG/icon-pinterest.svg" alt="pinterest"></a>
-            <a><img src="../IMG/icon-twitter.svg" alt="twitter"></a>
+            <p class="footer__info">
+                <span> 987 Hillcrest Lane</span>
+                <span>Irvine, CA</span>
+                <span>California 92714</span>
+                <span>Call Us : 949-833-7432</span>
+            </p>
         </div>
 
-        <p class="footer__copy">
-            Copyright 2022. All Rights Reserved
-        </p>
+        <div class="footer__wrap">
+            <div class="footer__socials">
+                <a><img src="../IMG/icon-facebook.svg" alt="facebook"></a>
+                <a><img src="../IMG/icon-pinterest.svg" alt="pinterest"></a>
+                <a><img src="../IMG/icon-twitter.svg" alt="twitter"></a>
+            </div>
+
+            <p class="footer__copy">
+                Copyright 2022. All Rights Reserved
+            </p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
