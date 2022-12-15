@@ -1002,10 +1002,13 @@ form {
     }
     /*contacts-main-desktop*/
     .contacts-h2{
-        margin-left: 50px;
+        margin-left: 90px;
+        margin-top: 60px;
     }
     .contacts-h3{
-        margin-left: 135px;
+        margin-left: 175px;
+        margin-bottom: 25px;
+        margin-top: 10px;
     }
     form{
         padding-right: 153px;
@@ -1019,5 +1022,14 @@ form {
         object-position: 80px;
         top: 577px;
     }
+    .contacts-img{
+        padding-top: 24px;
+        margin-left: 40px;
+        margin-right: -40px;
+    }
+    .contacts-icon-green{
+        top: 210px;
+    }
+
 
 }
