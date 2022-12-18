@@ -955,7 +955,13 @@ form {
     }
 
     .about2 {
-        height: 308px;
+        height: unset;
+    }
+
+    .about2__clients {
+        height: fit-content;
+        margin-top: 70px;
+        padding-bottom: 151px;
     }
 
     .about2 h2 {
@@ -965,8 +971,9 @@ form {
     .about2__clients {
 
 
-        height: 0px;
-        margin-top: 52px;
+        height: fit-content;
+        margin-top: 48px;
+        padding-bottom: 100px;
 
         flex-direction: row;
         align-items: center;
@@ -1222,23 +1229,53 @@ form {
         justify-self: center;
     }
 
+
+    .about2 {
+        height: unset;
+    }
+
     .about2 h2 {
         font-size: 48px;
         line-height: 48px;
-        height: unset;
 
-        padding-bottom: 70px;
     }
 
     .about2__clients {
-        margin-top: 70px;
+        height: fit-content;
+        margin-top: 64px;
+        padding-bottom: 140px;
     }
 
     .about2 img {
         display: inline-block;
         margin: 0;
-        padding-bottom: 151px;
+        /* padding-bottom: 151px; */
 
+    }
+
+    .about2__1 {
+        width: 165px;
+        height: 28px;
+    }
+
+    .about2__2 {
+        width: 184px;
+        height: 23px;
+    }
+
+    .about2__3 {
+        width: 180px;
+        height: 28px;
+    }
+
+    .about2__4 {
+        width: 165px;
+        height: 28px;
+    }
+
+    .about2__5 {
+        width: 98px;
+        height: 45px
     }
 
 
@@ -1254,7 +1291,64 @@ form {
 
     /* footer */
 
+    .footer {
+        display: inline-block;
+        height: 196px;
+        padding: 55px 165px;
+    }
 
+    .footer__logo {
+        margin-right: 125px;
+    }
+
+    .footer__logo img {
+        width: 160px;
+        height: 40px;
+    }
+
+    .footer__nav {
+        font-size: 28px;
+        line-height: 18px;
+
+        margin: 0;
+        padding: 25px 0px;
+        float: left;
+    }
+
+    .footer__info {
+        float: left;
+        text-align: start;
+    }
+
+    .footer__wrap {
+        display: block;
+        width: fit-content;
+    }
+
+    .footer__wrap:nth-of-type(1) {
+        float: left;
+    }
+
+    .footer__wrap:nth-of-type(2) {
+        float: right;
+    }
+
+    .footer__socials {
+        justify-content: end;
+        float: unset
+    }
+
+    .footer__socials a img:nth-child(1) {
+        padding: 0px;
+        padding-left: 16px;
+        padding-bottom: 51px;
+    }
+
+    .footer__copy {
+        float: unset;
+        margin: unset;
+        display: block;
+    }
 
 
 }
