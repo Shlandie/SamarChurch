@@ -722,10 +722,6 @@ header {
     position: relative;
 }
 
-input {
-    display: block;
-}
-
 .contacts-container {
     width: 100%;
     background-color: var(--Midnight_Green);
@@ -794,6 +790,7 @@ input {
 }
 
 input {
+    display: block;
     border-color: transparent;
     border-bottom: 1px solid var(--White);
     background-color: var(--Midnight_Green);
@@ -801,6 +798,11 @@ input {
     padding-top: 24px;
     padding-bottom: 16px;
     padding-left: 24px;
+    font-family: 'livvic';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--White);
 }
 
 input:focus {
