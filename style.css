@@ -234,6 +234,10 @@
     overflow: hidden;
 }
 
+.about1 hr {
+    display: none;
+}
+
 .about1 h2 {
     font-size: 40px;
     line-height: 40px;
@@ -714,9 +718,9 @@ header {
 
 /*contacts-main*/
 
-.contacts-main{
+.contacts-main {
     position: relative;
-  }
+}
 
 input {
     display: block;
@@ -858,13 +862,15 @@ form {
 
 /*form-javascript*/
 
-.error-field{
+.error-field {
     border-bottom: 1px solid var(--Light-Coral) !important;
 }
-.error-field::placeholder{
+
+.error-field::placeholder {
     color: var(--Light-Coral);
 }
-.error-label{
+
+.error-label {
     color: var(--Light-Coral) !important;
     font-family: 'Livvic';
     font-weight: 700;
@@ -874,7 +880,8 @@ form {
     padding-top: 8px;
     padding-left: 25px;
 }
-.error-label-comp-name{
+
+.error-label-comp-name {
     color: var(--Light-Coral) !important;
     font-family: 'Livvic';
     font-weight: 700;
@@ -885,7 +892,8 @@ form {
     margin-bottom: 352px;
     margin-top: -352px;
 }
-.error-label-msg{
+
+.error-label-msg {
     color: var(--Light-Coral) !important;
     font-family: 'Livvic';
     font-weight: 700;
@@ -932,19 +940,19 @@ form {
     }
 
     .mainabout__person {
-        max-width: 258px;
+        max-width: 281px;
         max-height: 253px;
         margin-top: 48px;
 
     }
 
     .mainabout__person:nth-of-type(2n-1) {
-        margin: 108px 5px 0px 96px;
+        margin: 96px 5px 0px 96px;
         justify-self: end;
     }
 
     .mainabout__person:nth-of-type(2n) {
-        margin: 108px 96px 0px 5px;
+        margin: 96px 96px 0px 5px;
         justify-self: start;
     }
 
@@ -956,7 +964,13 @@ form {
     }
 
     .about2 {
-        height: 308px;
+        height: unset;
+    }
+
+    .about2__clients {
+        height: fit-content;
+        margin-top: 70px;
+        padding-bottom: 151px;
     }
 
     .about2 h2 {
@@ -966,8 +980,9 @@ form {
     .about2__clients {
 
 
-        height: 0px;
-        margin-top: 52px;
+        height: fit-content;
+        margin-top: 48px;
+        padding-bottom: 100px;
 
         flex-direction: row;
         align-items: center;
@@ -1184,6 +1199,52 @@ form {
         top: 20px;
     }
 
+    /* about */
+
+    .about1 {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about1 hr {
+        color: var(--Light-Coral);
+
+        display: block;
+        width: 50px;
+        margin: 0;
+        background-color: var(--Light-Coral);
+        border: var(--Light-Coral) 2px solid;
+
+        opacity: 1;
+    }
+
+    .about1 h2 {
+        font-size: 64px;
+        line-height: 100px;
+        text-align: left;
+
+        box-sizing: content-box;
+        display: inline-block;
+        min-width: 350px;
+        padding: 0px 0px 176px 165px;
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    .about1 p {
+        text-align: left;
+
+        display: inline-block;
+        min-width: 730px;
+        padding: 40px 165px 120px 0px;
+        margin: 0;
+
+        float: left;
+
+    }
+
     .mainabout {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: fit-content 1fr 1fr;
@@ -1202,15 +1263,175 @@ form {
     .mainabout__person:nth-of-type(1n) {
         justify-self: unset;
         margin: 0;
+        min-width: 350px;
         /* padding: 0; */
     }
 
-    .mainabout__person:nth-of-type(3n-2) {
+    .mainabout__person:nth-of-type(3n + 1) {
         justify-self: end;
+        margin-left: 165px;
+
     }
 
-    .mainabout__person:nth-of-type(2n+n) {
+    .mainabout__person:nth-of-type(1) {
+        margin-bottom: 70px;
+    }
+
+    .mainabout__person:nth-of-type(2) {
+        margin-bottom: 70px;
+    }
+
+    .mainabout__person:nth-of-type(3) {
+        margin-bottom: 70px;
+    }
+
+    .mainabout__person:nth-of-type(3n+3) {
         justify-self: start;
+        margin-right: 165px;
+    }
+
+    .mainabout__person:nth-of-type(3n+2) {
+        justify-self: center;
+    }
+
+
+    .about2 {
+        height: unset;
+    }
+
+    .about2 h2 {
+        font-size: 48px;
+        line-height: 48px;
+
+    }
+
+    .about2__clients {
+        height: fit-content;
+        margin-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .about2 img {
+        display: inline-block;
+        margin: 0;
+        /* padding-bottom: 151px; */
+
+    }
+
+    .about2__1 {
+        width: 165px;
+        height: 28px;
+    }
+
+    .about2__2 {
+        width: 184px;
+        height: 23px;
+    }
+
+    .about2__3 {
+        width: 180px;
+        height: 28px;
+    }
+
+    .about2__4 {
+        width: 165px;
+        height: 28px;
+    }
+
+    .about2__5 {
+        width: 98px;
+        height: 45px
+    }
+
+
+    /* pink-section */
+    .pinksection h2 {
+        font-size: 48px;
+        line-height: 48px;
+
+        padding: 76px 260px 76px 259px;
+
+    }
+
+
+    /* footer */
+
+
+
+    .footer {
+        display: inline-block;
+        /* box-sizing: content-box; */
+        height: 196px;
+        padding: 55px 165px;
+
+
+    }
+
+    .footer__logo {
+        margin-right: 125px;
+
+        overflow: hidden;
+    }
+
+    .footer__logo img {
+        width: 160px;
+        height: 40px;
+    }
+
+    .footer__nav {
+        font-size: 28px;
+        line-height: 18px;
+
+        margin: 0;
+        padding: 25px 0px;
+        float: left;
+
+        overflow: hidden;
+    }
+
+    .footer__info {
+        float: left;
+        text-align: start;
+
+        overflow: hidden;
+
+    }
+
+    .footer__wrap {
+        display: block;
+        width: fit-content;
+        overflow: hidden;
+    }
+
+    .footer__innerwrap {
+        overflow: hidden;
+    }
+
+    .footer__wrap:nth-of-type(1) {
+        float: left;
+    }
+
+    .footer__wrap:nth-of-type(2) {
+        float: right;
+    }
+
+    .footer__socials {
+        justify-content: end;
+        float: unset
+    }
+
+    .footer__socials a img:nth-child(1) {
+        padding: 0px;
+        padding-left: 16px;
+        padding-bottom: 51px;
+    }
+
+    .footer__copy {
+        float: unset;
+        margin: unset;
+        display: block;
+
+        overflow: hidden;
     }
 
 
