@@ -122,21 +122,21 @@
     content: "Hola,";
 } */
 
-.button-primary:link {
+.button--primary:link {
 
     color: var(--White);
 
 
 }
 
-.button-primary:hover {
+.button--primary:hover {
 
     color: var(--Dark-Green);
     background: var(--White);
 
 }
 
-.button-primary:active {
+.button--primary:active {
 
     color: var(--Sacramento-State-Green);
     opacity: 0.0;
@@ -369,7 +369,7 @@
 
 
 .mainabout__person__button:after {
-    content: '+';
+    /* content: '+';
     font-size: 32px;
     line-height: 0;
     position: absolute;
@@ -377,7 +377,12 @@
     top: 43%;
     left: 2%;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
+    content: url("IMG/icon-cross.svg");;
+    line-height: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px
 }
 
 .about2 {
