@@ -1273,6 +1273,7 @@ form {
 
     .about1 p {
         text-align: left;
+        font-size: 18px;
 
         display: inline-block;
         min-width: 730px;
