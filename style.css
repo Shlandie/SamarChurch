@@ -382,7 +382,8 @@
     left: 2%;
     right: 0;
     bottom: 0; */
-    content: url("IMG/icon-cross.svg");;
+    content: url("IMG/icon-cross.svg");
+    ;
     line-height: 0;
     position: absolute;
     top: 20px;
