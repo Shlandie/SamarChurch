@@ -957,6 +957,14 @@ form {
         justify-self: start;
     }
 
+    .mainabout__person:nth-of-type(1) {
+        margin-top: 48px;
+    }
+
+    .mainabout__person:nth-of-type(2) {
+        margin-top: 48px;
+    }
+
     .about2__ornament {
         left: 0px;
         top: -100px;
@@ -999,6 +1007,32 @@ form {
 
     }
 
+    .about2__1 {
+        width: 103px;
+        height: 17px;
+    }
+
+    .about2__2 {
+        width: 114px;
+        height: 14px;
+    }
+
+    .about2__3 {
+        width: 112px;
+        height: 17px;
+    }
+
+    .about2__4 {
+        width: 103px;
+        height: 17px;
+    }
+
+    .about2__5 {
+        width: 61px;
+        height: 28px;
+    }
+
+
     /* pinksection */
 
     .pinksection {
@@ -1012,7 +1046,7 @@ form {
         display: inline-block;
         margin: 0;
         padding: 84px 0px 84px 95px;
-        padding-right: 84px;
+        padding-right: 72px;
     }
 
     .pinksection a {
@@ -1053,6 +1087,7 @@ form {
 
     .footer__info {
 
+        text-align: right;
         word-wrap: unset;
 
         float: right;
@@ -1257,6 +1292,8 @@ form {
 
 
     .mainabout h2 {
+        font-size: 48px;
+
         grid-area: 1/ 1/ 2 / 4;
         padding-bottom: 64px;
     }
@@ -1360,7 +1397,7 @@ form {
 
 
     .footer {
-        display: inline-block;
+        /* display: inline-block; */
         /* box-sizing: content-box; */
         height: 196px;
         padding: 55px 165px;
