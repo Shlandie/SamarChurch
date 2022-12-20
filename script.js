@@ -27,9 +27,9 @@ function buttonpress(idin) {
     image.style.display = "none";
     console.log(image);
     p.insertAdjacentHTML("afterend", `
-                    <div class="footer__socials" style="padding: 0;">
-                    <a href="https://twitter.com/?lang=en"><img src="../IMG/icon-twitter.svg" style="width:100%;height:100%;border:none; border-radius:0;" alt="twitter"></a>
-                    <a href="https://lt.linkedin.com/"><img src="../IMG/icon-linkedin.svg" style="width:100%;height:100%;border:none; border-radius:0; padding:0;" alt="pinterest"></a>
+                    <div class="" style="padding: 0;">
+                    // <a href="https://twitter.com/?lang=en"><img src="../IMG/icon-twitter.svg" style="width:28px; height:24px; border:none; border-radius:0;" alt="twitter"></a>
+                    // <a href="https://lt.linkedin.com/"><img src="../IMG/icon-linkedin.svg" style="width:24px; height:24px; border:none; border-radius:0; margin-right:10px;" alt="pinterest"></a>
                     </div> `);
 }
 
