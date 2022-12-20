@@ -1,6 +1,7 @@
 function buttonpress(idin) {
     let element = document.getElementById(idin);
     let button = element.getElementsByTagName("button")[0];
+    let buttonclass = element.getElementsByClassName("shiny");
     let image = element.getElementsByTagName("img")[0];
     let h4 = element.getElementsByTagName("h4")[0];
     let p = element.getElementsByTagName("p")[0];
@@ -12,20 +13,23 @@ function buttonpress(idin) {
         h4.style.display = "block";
         image.style.display = "flex";
         element.style.backgroundColor = "var(--Sacramento-State-Green)";
+        button.style.backgroundColor = "var(--Light-Coral)";
+        // shiny.style.backgroundColor = "var(--Light-Coral)";
         element.getElementsByTagName("div")[0].remove();
         button.classList.remove("button--pressed");
         return;
     }
     button.className += " button--pressed";
     button.classList.add("button--pressed");
+    button.style.backgroundColor = "var(--Rapture-Blue)";
     p.style.display = "block";
     h4.style.display = "none";
     image.style.display = "none";
     console.log(image);
     p.insertAdjacentHTML("afterend", `
                     <div class="footer__socials" style="padding: 0;">
-                    <a><img src="../IMG/icon-twitter.svg" style="width:100%;height:100%;border:none; border-radius:0;" alt="twitter"></a>
-                    <a><img src="../IMG/icon-linkedin.svg" style="width:100%;height:100%;border:none; border-radius:0;" alt="pinterest"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="../IMG/icon-twitter.svg" style="width:100%;height:100%;border:none; border-radius:0;" alt="twitter"></a>
+                    <a href="https://lt.linkedin.com/"><img src="../IMG/icon-linkedin.svg" style="width:100%;height:100%;border:none; border-radius:0; padding:0;" alt="pinterest"></a>
                     </div> `);
 }
 
