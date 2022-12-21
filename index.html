@@ -10,18 +10,7 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
-
-        .flex{
-            display: flex;
-        }
-      
-        .ar-dist--l{
-            position: absolute; left: 165px;
-        }
-        .ar-dist--r{
-            position: absolute;  right: 165px;
-        }
-        
+        /* -------------For all devices------------------------------ */
         .img--rounded{
             display: block;
             border: 2px solid var(--Img-Border-Color);
@@ -32,31 +21,27 @@
             height: 62px;
             border-radius: 31px;
         }
-        
+        .op08{opacity: 0.8;}
+       
         .hr{
             width: 50px;
             height: 4px;
+            opacity: 1;
         }
-        .hr--home1{
-            background-color: var(--Rapture-Blue);
-            margin-bottom: 0px;
-            width: 0px;
-            height: 0px;
-           
-        }
-        .hr--home2{
-            background-color: var(--Light-Coral);
-            margin-top: 144px;
-            margin-bottom: 54px;
-
-        }
-        
-        
         .text--coral{
             color: var(--Light-Coral);
+            
         }
         .text--blue{
             color: var(--Rapture-Blue);
+            
+        }
+        .text--colorfull{
+            font-family: 'Livvic-SemiBold';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
         }
         .text--italic{
             font-family: 'Livvic-Italic';
@@ -65,13 +50,123 @@
             color:var(--White)
         }
         
+        .div--person::before{
+            content: url(IMG/icon-person.svg);
+        }
+        .div--chart::before{
+            content: url(IMG/icon-chart.svg);
+        }
+        .div--cog::before{
+            content: url(IMG/icon-cog.svg);
+        }
+        
+        .flex{
+            display: flex;
+        }
         .relflex{
             position: relative;
             display: flex;
         }
+        .div-quote{
+            background-image: url(IMG/icon-quotes.svg);
+            background-repeat: no-repeat;
+            background-position: top center;
+            
+        }
+/* ----------------for all devices------------------- */
+/* -------------display is too small---------- */
+@media(max-width:374px){
+    *{display: none;}
+}
+/* -----For less then 1439------------------------------------------- */
+@media(max-width:1439px){
+        .div-quote>p:first-of-type{
+            margin-top: 36px;
+            margin-bottom: 16px;
+        }
+        .div--home2::before{
+            margin-bottom: 16px;
+            display: block;
+        }
+        .div--home2{
+            margin-bottom: 48px;
+        }
+        
+        .h1--large{
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .h2{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 0;
+        }
+        .body--1{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+        
+        .body--2{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+        article{
+            margin-left: 24px;
+            margin-right: 24px;    
+        }
+        
+        .h1_art1{margin-bottom: 18px;}
+        
+        .h2_art1{    
+            text-align: left ;
+            width: 240px;
+            margin-bottom: 56px;
+        }
+        .h2_art2{
+            text-align: center;
+        }
+        #ar-home3--1{
+            margin-top: 140px;
+        }
+        
+
+        .hr--home1{
+            display: none;
+           
+        }
+        .hr--home2{
+            background-color: var(--Light-Coral);
+            margin-top: 64px;
+            margin-bottom: 32px;
+
+        }
+        .tc{
+            margin-bottom: 8px;
+        }
+        .tb{
+            margin-bottom: 2px;
+        }
+        .img--rounded{
+            margin-top:0px;
+        }
+        
+        
+        
+        header{
+            height:160px;
+        }
 
         #section--home1{
-            height: 450px;
+            text-align: center;
+            align-content: center;
+            height: 417px;
             background-color: var(--Midnight_Green);
             background-image: 
                 url(IMG/bg-pattern-home-2.svg);
@@ -91,7 +186,21 @@
             background-position: right -100px top;
             flex-direction: column; 
         }
+        .div-quote{
+            margin-top: 48px;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            
+        }
         #section--home3{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
             height: 1410px;
             background-color: var(--Deep-Jungle-Green);
             background-image: 
@@ -102,10 +211,113 @@
             background-position: left top, right bottom;
             flex-direction: column;
         }
+       
         
+    }
+/* -------------------------mobile and some tablet------------------ */
+/* --------------Tablet---------- */
+@media(min-width:768px){
+    .hr--home2{
+        margin-top: 100px;
+        margin-bottom: 32px;
+    }
+    .div--home2::before{
+        text-align: left;
+        float: left;
+        margin-right: 23px;
+        margin-bottom: 0;}
 
-
+    .h1--large{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 56px;
+    }
+    #ar-home3--1{
+        margin-top: 100px;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+    .tc{
+        margin-bottom: 16px;
+    }
+    .h2_art1{
+        width: auto;
+        margin-right: 255px;
+        margin-bottom: 64px;
+    }
+    #section--home1 article{
+        margin-left: 155;
+        margin-right: 155;
+    }
+    .h1_art1{margin-bottom: 24px;}
+    #section--home1{
+        height: 533px;
+    }
+    #section--home2{
+        height: 710px;
+        text-align: left;
+    }
+    #section--home3{
+        height: 1199px;
+    }
+    
+    .div--home2{
+        text-align: left;
+        margin-bottom: 32px;
+    }
+    article{
+            margin-left: 97px;
+            margin-right: 97px;    
+        }
+        .footer__info{
+            text-align: right;
+        }
+    }
+/* -------------------tablet-------------------- */
+/* ------------------------For 1440px and more-------------------------------------- */
     @media(min-width:1440px){
+        .footer__info{
+            text-align: right;
+        }
+        .div-quote>p:first-of-type{
+            margin-top: 36px;
+            margin-bottom: 24px;
+        }
+        .div--home2::before{
+            float: left;
+            margin-right: 23px;}
+        .h1{font-size: 100px;}
+        .h1_art2{
+            width: 445px;
+        }
+        #ar-home3--1{
+            margin-top: 140px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 932px;
+            text-align: center;
+            align-self:center;
+            background-color: hsla(0, 0, 0,0);
+        }
+        #ar-home3--2{
+            justify-content: center;
+            display: flex;
+        }
+        .div--home2{
+            margin-bottom: 32px;
+            width: 540px;
+        }
+               
+        
+       
+        .h2_art1{width: 445px;}
+        .h2_art2{margin-top: 198px;}
+        .ar-dist--l{
+            position: absolute; left: 165px;
+        }
+        .ar-dist--r{
+            position: absolute;  right: 165px;
+        }
         #section--home1{
             height: 450px;
             background-color: var(--Midnight_Green);
@@ -138,75 +350,33 @@
             background-position: left top, right bottom;
             flex-direction: column;
         }
-
-
-
-        .hr{
-            width: 50px;
-            height: 4px;
-	    opacity: 1;
-        }
+        
         .hr--home1{
             background-color: var(--Rapture-Blue);
             margin-bottom: 79px;
-/*             display: block; */
+            opacity: 1;
+            display: block;
         }
         .hr--home2{
             background-color: var(--Light-Coral);
             margin-top: 144px;
             margin-bottom: 54px;
+            opacity: 1;
 
-        }
-    }
-
-        #ar-home3--1{
-            margin-top: 140px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 932px;
-            text-align: center;
-            align-self:center;
-            background-color: hsla(0, 0, 0,0);
-        }
-        #ar-home3--2{
-            justify-content: center;
-            display: flex;
-        }
-        .div--home2{
-            margin-bottom: 32px;
-            width: 540px;
         }
         .div-quote{
-            background-image: url(IMG/icon-quotes.svg);
-            background-repeat: no-repeat;
             margin-top: 56px;
-            background-position: top center;
             display: flex;
             margin-left: 15px;
             margin-right: 15px;
             text-align: center;
-            display: block;
             width: 350px;
+            display: flex;
+            flex-direction: column;
         }
-        .div-quote>p:first-of-type{
-            margin-top: 36px;
-            margin-bottom: 24px;
-        }
-        .div--person::before{
-            content: url(IMG/icon-person.svg);
-            float: left;
-            margin-right: 23px;
-        }
-        .div--chart::before{
-            content: url(IMG/icon-chart.svg);
-            float: left;
-            margin-right: 23px;
-        }
-        .div--cog::before{
-            content: url(IMG/icon-cog.svg);
-            float: left;
-            margin-right: 23px;
-        }
+    }
+
+
     </style>
 </head>
 <body>
@@ -239,17 +409,19 @@
         </nav>
     </header>
     <main>
-
+<!--  -->
 
 
         <!-- FIND the best talent -->
         <section id="section--home1" class="relflex">
-            <article class="ar-dist--l" style="width: 635px;">
+            <article class="ar-dist--l h1_art1">
+                <!-- style="width: 635px;" -->
                 <h1 class="h1--large" >
                     Find the <br>best <span class="text--coral">talent</span>
                 </h1>
             </article>
-            <article class="ar-dist--r" style="width: 445px;">
+            <article class="ar-dist--r h1_art2">
+                 <!-- style="width: 445px;" -->
                 <hr class="hr--home1 hr">
                 <p class="body--1">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
             </article>
@@ -259,29 +431,30 @@
 
         <!--Build & manage distributed teams like no one else.-->
         <section id="section--home2" class="relflex">
-            <article class="ar-dist--l" style="width: 445px;">
+            <article class="ar-dist--l h2_art1">
+                <!-- style="width: 445px;" -->
                 <hr class="hr hr--home2">
                 <h2 class="h2">
                     Build & manage distributed teams like no one else.
                 </h2>
             </article>
-            <article class="ar-dist--r">
+            <article class="ar-dist--r h2_art2">
                
-                <div class="div--person div--home2 " style=" margin-top: 198px;">
-                    <p class="body--1 text--coral" >Experienced Individuals</p>
-                    <p class="body--2">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+                <div class="div--person div--home2 " >
+                    <p class="text--colorfull tc text--coral" >Experienced Individuals</p>
+                    <p class="body--2 op08">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
                 </div>
               
              
                 <div class="div--cog div--home2 ">
-                    <p class="body--1 text--coral">Easy to Implement</p>
-                    <p class="body--2">Our processes have been refined over years of implementation meaning our teams always deliver.</p>
+                    <p class="text--colorfull tc text--coral">Easy to Implement</p>
+                    <p class="body--2 op08">Our processes have been refined over years of implementation meaning our teams always deliver.</p>
                 </div>
               
               
-                <div class="div--chart div--home2 ">
-                    <p class="body--1 text--coral">Enhanced Productivity</p>
-                    <p class="body--2">Our customized platform with in-built analytics helps you manage your distributed teams.</p>
+                <div class="div--chart div--home2 div--home2last">
+                    <p class="text--colorfull tc text--coral">Enhanced Productivity</p>
+                    <p class="body--2 op08">Our customized platform with in-built analytics helps you manage your distributed teams.</p>
                 </div>
               
             </article>
@@ -299,20 +472,20 @@
             <article id="ar-home3--2">
                 <div class="div-quote">
                     <p class="body--2"> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
-                    <p class="body--1 text--blue">Kady Baker</p>
+                    <p class="text--colorfull tb text--blue">Kady Baker</p>
                     <p class="text--italic">Product Manager at Bookmark</p>
                     <img src="IMG/avatar-kady.jpg" alt="Kady" class="img--rounded">
                 </div>
                 <div class="div-quote">
                     <p class="body--2">“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</p>
-                    <p class="body--1 text--blue">Aiysha Reese </p>
+                    <p class="text--colorfull tb text--blue">Aiysha Reese </p>
                     <p class="text--italic">Founder of Manage</p>
                     <img src="IMG/avatar-aiysha.jpg" alt="Aiysha" class="img--rounded">
                 </div>
 
                 <div class="div-quote">
                     <p class="body--2">“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”</p>
-                    <p class="body--1 text--blue">Arthur Clarke</p>
+                    <p class="text--colorfull tb text--blue">Arthur Clarke</p>
                     <p class="text--italic">Co-founder of MyPhysio</p>
                     <img src="IMG/avatar-arthur.jpg" alt="Arthur" class="img--rounded">
                     
@@ -321,7 +494,7 @@
         </section>
         <section class="pinksection">
             <h2 class="">Ready to get started?</h2>
-            <a class="pinksection__button">contact us</a>
+            <a class="pinksection__button" href="/PAGES/contacts.html" >contact us</a>
             <img src="IMG/bg-pattern-home-6-about-5.svg" alt="ornament">
         </section>
     </main>
