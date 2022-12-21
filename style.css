@@ -221,6 +221,26 @@
 /*---------------------Body's text classes end----------------*/
 
 /* about */
+
+.mainabout__person{
+    height: 253px;
+}
+.about-quote{
+    margin-bottom: 24px; 
+    display: none;
+    width: 254px;
+}
+/* mainabout__person__button:after{content: url(../IMG/icon-cross.svg); left: 20; top: 20 px;} */
+.button--pressed::after{
+    transform: rotate(45deg); right: 20px; top: 20px;
+}
+.button--pressed{
+    background-color: var(--Rapture-Blue);
+}
+.button--pressed:hover{
+         background-color: var(--Light-Coral);
+}
+
 .about1 {
     position: relative;
 
@@ -1476,4 +1496,13 @@ form {
     }
 
 
+}
+
+.buttonhover:hover{
+    filter: invert(51%) sepia(8%) saturate(3511%) hue-rotate(314deg) brightness(125%) contrast(93%);
+}
+
+
+.buttonhover:active{
+    filter: invert(0%) sepia(99%) saturate(0%) hue-rotate(40deg) brightness(109%) contrast(101%);
 }

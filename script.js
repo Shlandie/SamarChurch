@@ -28,8 +28,8 @@ function buttonpress(idin) {
     console.log(image);
     p.insertAdjacentHTML("afterend", `
                     <div class="" style="padding: 0;">
-                    // <a href="https://twitter.com/?lang=en"><img src="../IMG/icon-twitter.svg" style="width:28px; height:24px; border:none; border-radius:0;" alt="twitter"></a>
-                    // <a href="https://lt.linkedin.com/"><img src="../IMG/icon-linkedin.svg" style="width:24px; height:24px; border:none; border-radius:0; margin-right:10px;" alt="pinterest"></a>
+                     <a class="buttonhover" href="https://twitter.com/?lang=en"><img src="../IMG/icon-twitter.svg" style="width:28px; height:24px; border:none; border-radius:0;" alt="twitter"></a>
+                     <a class="buttonhover" href="https://lt.linkedin.com/"><img src="../IMG/icon-linkedin.svg" style="width:24px; height:24px; border:none; border-radius:0; margin-left:10px;" alt="pinterest"></a>
                     </div> `);
 }
 
