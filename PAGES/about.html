@@ -203,6 +203,7 @@
             let button = element.getElementsByTagName("button")[0];
             let image = element.getElementsByTagName("img")[0];
             let h4 = element.getElementsByTagName("h4")[0];
+            let h3 = element.getElementsByTagName("h3")[0];
             let p = element.getElementsByTagName("p")[0];
                
                 
@@ -210,6 +211,8 @@
             if(p.style.display=="block"){
                 p.style.display="none";
                 h4.style.display="block";
+                
+                h3.style.marginTop="0px";
                 image.style.display="flex";
                 element.style.backgroundColor="var(--Sacramento-State-Green)";
                 element.getElementsByTagName("div")[0].remove();
@@ -218,6 +221,8 @@
             }
             button.className+=" button--pressed";
             button.classList.add("button--pressed");
+            h3.style.marginTop="19px";
+           
             p.style.display="block";
             h4.style.display="none";
             image.style.display="none";
